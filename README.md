@@ -24,4 +24,15 @@ TODO
 
 - DNS/hosting - solved circa March 2021
 - nextjs/mdx - started shortly after, but abandoned.  Giant pain in butt.
-- markdown MVP - start late in 2021...so late it's 2022 as I type this.
+- markdown MVP - start late in 2021...so late it's 2022 as I type this
+
+How it works
+------------
+
+This is a git repository, it's used for github-io which is Github's hosting. I
+further pointed it at an external domain via google's DNS registration.
+
+Anything in /docs is public on the internet at the address specified in the 
+CNAME file.
+
+This repository holds the raw content and the published content.
