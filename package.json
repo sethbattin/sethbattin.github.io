@@ -8,8 +8,7 @@
   },
   "scripts": {
     "mark": "node $npm_config_xmod node_modules/.bin/marked --",
-    "db": "echo $npm_config_xmod",
-    "all": "printenv",
+    "publish": "node $npm_config_xmod scripts/publish.mjs",
     "test": "test.js"
   },
   "repository": {
