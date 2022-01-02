@@ -1,0 +1,27 @@
+{
+  "name": "sethbattin.github.io",
+  "version": "1.0.0-wip.0",
+  "description": "Personal blog",
+  "main": " ",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "mark": "node $npm_config_xmod node_modules/.bin/marked --",
+    "publish": "node $npm_config_xmod scripts/publish.mjs",
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethbattin/sethbattin.github.io.git"
+  },
+  "author": "Seth Battin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethbattin/sethbattin.github.io/issues"
+  },
+  "homepage": "https://github.com/sethbattin/sethbattin.github.io#readme",
+  "dependencies": {
+    "marked": "^4.0.8"
+  }
+}

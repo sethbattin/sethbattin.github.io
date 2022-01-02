@@ -1,4 +1,4 @@
-# beginning a blog
+# Beginning a blog
 
 After waiting what feels like most of a lifetime, I finally made progress toward writing and publishing again.  I've had the inspiration to start blogging again for a very, very long time, but like all projects in my recent adult life I have lost momentum before even starting.
 The idea of writing has bounced around my head for a great long time.  It was my first career ambition as a child, even.  That dream fell away in the face of STEM.  I experimented again in college amid my engineering studies, and I enjoyed the exercise a great deal.  But after google-analyzing a visitor that may have been a prospective employer, I unilaterally wiped all its contents.  The content was not valuable, but I regret the loss of the activity.
