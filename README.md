@@ -20,7 +20,7 @@ TODO
 - [ ] cool 2nd-buffer tool for deciding when to publish a draft document
 - [ ] MDX stuff for frontmatter-or-whatever-you-call-it
 - [ ] nextjs because it does all of the above jobs
-- [ ] private submodule for drafts
+- [x] private submodule for drafts
 - [ ] css & layout
 - [ ] use tagged releases instead of branch deploys?
 - [ ] spelling, grammer, and readability checker?
@@ -30,8 +30,8 @@ TODO
 - DNS/hosting - solved circa March 2021
 - nextjs/mdx - started shortly after, but abandoned.  Giant pain in butt.
 - markdown MVP - start late in 2021...so late it's 2022 as I type this - complete Jan 1 2022 :party:
+- private drafts start ~ Jan 11th - easy but uses submodules; blog about that
 - css & layout start ~ Jan 11th
-- private drafts start ~ Jan 11th
 
 How it works
 ------------
