@@ -1,0 +1,32 @@
+html {
+  font-size: 24px;
+}
+body {
+  margin: .75rem;
+}
+p {
+  margin: 0;
+  text-indent: 3rem;
+  line-height: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-variant: small-caps;
+}
+h1 {
+  font-size: 4rem;
+}
+
+/* illumination? nah, newspaper style */
+h1 + p {
+  text-indent: 0;
+}
+h1 + p::first-letter {
+  font-size: 300%;
+  padding: .25rem;
+  padding-right: 0;
+  vertical-align: sub;
+  float: left;
+  line-height: 2.5rem;
+}
+
