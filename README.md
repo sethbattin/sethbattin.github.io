@@ -11,7 +11,7 @@ scratch pad to avoid bikeshedding the core function of writing.
 TODO
 ----
 - [x] DNS, hosting, updating, etc.
-- [ ] Produce html from markdown
+- [x] Produce html from markdown
 - [ ] Derrive publish and update dates from version control
 - [ ] Create a good global layout
 - [ ] SEO, analytics, and whatnot
@@ -20,11 +20,18 @@ TODO
 - [ ] cool 2nd-buffer tool for deciding when to publish a draft document
 - [ ] MDX stuff for frontmatter-or-whatever-you-call-it
 - [ ] nextjs because it does all of the above jobs
+- [ ] private submodule for drafts
+- [ ] css & layout
+- [ ] use tagged releases instead of branch deploys?
+- [ ] spelling, grammer, and readability checker?
+- [ ] add a tagging system
 
 
 - DNS/hosting - solved circa March 2021
 - nextjs/mdx - started shortly after, but abandoned.  Giant pain in butt.
-- markdown MVP - start late in 2021...so late it's 2022 as I type this
+- markdown MVP - start late in 2021...so late it's 2022 as I type this - complete Jan 1 2022 :party:
+- css & layout start ~ Jan 11th
+- private drafts start ~ Jan 11th
 
 How it works
 ------------
