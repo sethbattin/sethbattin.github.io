@@ -13,6 +13,9 @@ p {
   text-indent: 2.5rem;
   line-height: 2rem;
 }
+time {
+  line-height: 2rem;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-variant: small-caps;
@@ -27,16 +30,21 @@ h2 {
 }
 
 /* illumination? nah, newspaper style */
-h1 + p {
+article > p:first-of-type {
   text-indent: 0;
 }
-h1 + p::first-letter {
+article > p:first-of-type::first-letter {
   font-size: 300%;
   padding: .25rem;
   padding-right: 0;
   vertical-align: sub;
   float: left;
   line-height: 2.5rem;
+}
+
+article > address {
+  text-align: right;
+  margin: 2rem 0;
 }
 
 /* width and breakpoints

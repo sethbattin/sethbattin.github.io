@@ -6,11 +6,18 @@
   "directories": {
     "doc": "docs"
   },
+  "type": "module",
   "scripts": {
     "mark": "node $npm_config_xmod node_modules/.bin/marked --",
     "publish": "node $npm_config_xmod scripts/publish.mjs",
     "start": "npx serve docs",
-    "test": "test.js"
+    "test": "node $npm_config_xvmmod node_modules/.bin/jest "
+  },
+  "jest": {
+    "testMatch": [
+      "**/__tests__/**/*.[jt]s?(x)", 
+      "**/?(*.)+(spec|test).[jt]s?(x)"
+    ]
   },
   "repository": {
     "type": "git",
@@ -26,6 +33,7 @@
     "marked": "^4.0.8"
   },
   "devDependencies": {
+    "jest": "^27.4.7",
     "serve": "^13.0.2"
   }
 }
