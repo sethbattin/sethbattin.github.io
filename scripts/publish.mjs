@@ -8,8 +8,9 @@ const [nodeBin, script, fileName] = process.argv
 assert(!!fileName, "specify a markdown file to publish")
 
 const postFile = pathparse(relative('posts', fileName))
-
-parse(fileName).then(async ({markup, meta}) => {
+fs.readFile(fileName, 'utf-8')
+  .then(mdContent => parse(mdContent))
+  .then(async ({markup, meta}) => {
   const outFile = join('docs', postFile.dir.replace('_private', ''), postFile.name, "index.html")
   await fs.mkdir(pathparse(outFile).dir, {recursive: true})
   await fs.writeFile(outFile, markup)
