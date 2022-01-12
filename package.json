@@ -11,7 +11,7 @@
     "mark": "node $npm_config_xmod node_modules/.bin/marked --",
     "publish": "node $npm_config_xmod scripts/publish.mjs",
     "start": "npx serve docs",
-    "test": "node $npm_config_xvmmod node_modules/.bin/jest --"
+    "test": "node $npm_config_xvmmod node_modules/.bin/jest "
   },
   "jest": {
     "testMatch": [
