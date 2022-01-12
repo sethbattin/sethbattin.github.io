@@ -24,6 +24,9 @@ this file exists.
 <p>this file exists.
       </p>
 
+    <address>
+      By <a href=\\"/seth-battin\\" rel=\\"author\\">Seth Battin</a>
+    </address>
     </article>
   "
 `) 

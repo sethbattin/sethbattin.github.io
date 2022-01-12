@@ -12,6 +12,9 @@ function layout( htmlBody, meta) {
   <body>
     <article itemscope itemtype="https://schema.org/Article">
     ${htmlBody}
+    <address>
+      By <a href="/seth-battin" rel="author">Seth Battin</a>
+    </address>
     </article>
   </body>
 </html>`
