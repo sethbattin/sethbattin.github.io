@@ -1,3 +1,0 @@
-[submodule "posts/_private"]
-	path = posts/_private
-	url = git@github.com:sethbattin/blog-drafts.git
