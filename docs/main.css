@@ -42,6 +42,11 @@ article > p:first-of-type::first-letter {
   line-height: 2.5rem;
 }
 
+article > address {
+  text-align: right;
+  margin: 2rem 0;
+}
+
 /* width and breakpoints
  * TODO: size article width rather than body after article elements exist */
 /* TBD breakpoints via env (since media queries don't work) */
