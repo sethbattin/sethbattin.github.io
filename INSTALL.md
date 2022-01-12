@@ -51,4 +51,17 @@ npm start
 # hosts content in /docs
 ```
 
+Testing
+-------
+I decided to take my own as-yet-unwritten advice about TDD and add tests.  I
+think jest is pretty good, so i used it.  Now I have to format my article 
+about ESModules based on the different variety of ways they can confound the
+basic tools of development.
+
+But it's not that bad:
+1. add another npm config `npm config set -- xvmmod=experimental-vm-modules`
+2. name tests with `.js` even though they're really modules
+3. include in package.json `"type": "module"`
+4. run the script `npm test` (also from package.json)
+
 [marked]: https://marked.js.org/ "Marked - markdown processor for javascript"
