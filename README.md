@@ -21,10 +21,11 @@ TODO
 - [ ] MDX stuff for frontmatter-or-whatever-you-call-it
 - [ ] nextjs because it does all of the above jobs
 - [x] private submodule for drafts
-- [ ] css & layout
+- [x] css & layout
 - [ ] use tagged releases instead of branch deploys?
 - [ ] spelling, grammer, and readability checker?
 - [ ] add a tagging system
+- [ ] create a "showworthy" feature list
 
 
 - DNS/hosting - solved circa March 2021
@@ -32,6 +33,7 @@ TODO
 - markdown MVP - start late in 2021...so late it's 2022 as I type this - complete Jan 1 2022 :party:
 - private drafts start ~ Jan 11th - easy but uses submodules; blog about that
 - css & layout start ~ Jan 11th
+
 
 How it works
 ------------
@@ -42,4 +44,6 @@ further pointed it at an external domain via google's DNS registration.
 Anything in /docs is public on the internet at the address specified in the 
 CNAME file.
 
-This repository holds the raw content and the published content.
+This repository holds the raw content and the published content.  I also keep 
+some draft content in a git submodule that is not a public repo; not every-
+thing that i type needs to be published.
