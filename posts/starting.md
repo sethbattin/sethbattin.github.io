@@ -7,18 +7,18 @@ Today, I not only lack desperation to please some fickle interviewer but also se
 ## First the bikeshedding
 Although literal typing of words is something I can do without hesitation, virtually anywhere and at any time, actually producing a website on which to write things inspires crippling analysis paralysis.  To self-title or cling to anonymity?  To focus on my profession (or other subject) or allow variety?  A gimmicky theme or a simple journal?  And of course the pinnacle of indecision, what title?
 
-God save me, choosing a url encompasses all the prior problems and more.
+God save me, choosing a URL encompasses all the prior problems and more.
 
 So for several months, I avoided all those issues entirely and simply took notes about topics.  If their collation answers the above questions, I thought, then I will be able to proceed.  This plan worked; the pattern I noticed was helpful.  
 
-I like to be a real person and take responsibility for my ideas.  I do like to talk about my area of expertise; my objective level expertness doesn't really matter.  And I want to be able to discuss whatever subject occurs to me.  Most of all, I like to answer questions.  Hence my current domain name: personal, short, and accurately capturing the rheorical style.
+I like to be a real person and take responsibility for my ideas.  I do like to talk about my area of expertise; my objective level expertness doesn't really matter.  And I want to be able to discuss whatever subject occurs to me.  Most of all, I like to answer questions.  Hence my current domain name: personal, short, and accurately capturing the rhetorical style.
 
 ## Knowing the URL is half the battle
 Acquiring a domain name is the other half.  Rounding out my 3rd decade on the internet, and my 2nd as a web professional, one might assume that I could register a domain with my eyes closed.  HAHAHAHA no.
 
-Having had previous blogs, I did have preexisting domain regsitration and hosting, both via a longstading and terrible provider.  The idea of working with that organization has been repugnant for longer than I can remember.  But fully extricating myself from their clutches was extremely difficult.  And finding new hosting is also surprisingly annoying in current world.  [future article: why modern turnkey hosting is bad][hosting]
+Having had previous blogs, I did have preexisting domain registration and hosting, both via a longstanding and terrible provider.  The idea of working with that organization has been repugnant for longer than I can remember.  But fully extricating myself from their clutches was extremely difficult.  And finding new hosting is also surprisingly annoying in current world.  [future article: why modern turnkey hosting is bad][hosting]
 
-Commercial giga-tech to the rescue.  Google offers service as a domain registrar, and like all their products they make it as straightforward as possible.  But it still takes days of waiting, which is usually outside my attention span.  Luckily I had been building committment to this project literally for years.
+Commercial giga-tech to the rescue.  Google offers service as a domain registrar, and like all their products they make it as straightforward as possible.  But it still takes days of waiting, which is usually outside my attention span.  Luckily I had been building commitment to this project literally for years.
 
 New domain in hand, I still had to acquire new hosting.  Although I _could_ spin up a server of my own, or use some godawful orchestration of cloud services, or purchase the aforementioned terrible consumer options, those all seemed like far more effort than I was willing and able to invest.  I wanted to write, not administer systems.
 

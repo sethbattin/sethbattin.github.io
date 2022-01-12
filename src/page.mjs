@@ -7,6 +7,7 @@ function layout( htmlBody, meta) {
   return `<html>
   <head>
     <title>Seth.how Blog${title && ` | ${title}`}</title>
+    <link type="text/css" rel="stylesheet" href="/main.css" />
   </head>
   <body>
     ${htmlBody}

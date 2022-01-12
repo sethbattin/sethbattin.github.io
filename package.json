@@ -9,6 +9,7 @@
   "scripts": {
     "mark": "node $npm_config_xmod node_modules/.bin/marked --",
     "publish": "node $npm_config_xmod scripts/publish.mjs",
+    "start": "npx serve docs",
     "test": "test.js"
   },
   "repository": {
@@ -23,5 +24,8 @@
   "homepage": "https://github.com/sethbattin/sethbattin.github.io#readme",
   "dependencies": {
     "marked": "^4.0.8"
+  },
+  "devDependencies": {
+    "serve": "^13.0.2"
   }
 }

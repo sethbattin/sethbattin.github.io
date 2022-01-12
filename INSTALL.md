@@ -31,11 +31,24 @@ can receive markdown from stdin and return html to stdout, or specify other
 file io.  It can also operate as a javascript module.
 
 ```bash
-npm run mark -i INSTALL.md
+npm run mark -- -i INSTALL.md
 # <h1 id=installation>Installation</h1>
 # ...
 ```
 
+Publishing
+----------
+```bash
+npm run publish post/my-awesome-post.md
+# writes to docs/my-awesome-post/index.html
+```
 
+Previewing
+----------
+Serve the static content locally via the npm module `serve`:
+```bash
+npm start
+# hosts content in /docs
+```
 
 [marked]: https://marked.js.org/ "Marked - markdown processor for javascript"
