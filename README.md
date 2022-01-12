@@ -12,8 +12,8 @@ TODO
 ----
 - [x] DNS, hosting, updating, etc.
 - [x] Produce html from markdown
-- [ ] Derrive publish and update dates from version control
-- [ ] Create a good global layout
+- [x] Derrive publish and update dates from version control
+- [x] Create a good global layout
 - [ ] SEO, analytics, and whatnot
 - [ ] inter-linking pages like a real blog CMS
 - [ ] image hosting?
@@ -25,7 +25,7 @@ TODO
 - [ ] use tagged releases instead of branch deploys?
 - [ ] spelling, grammer, and readability checker?
 - [ ] add a tagging system
-- [ ] create a "showworthy" feature list
+- [x] create a "showworthy" feature list
 
 
 - DNS/hosting - solved circa March 2021
@@ -54,14 +54,14 @@ Epic: show-worthiness
 
 ### features
 - [ ] index page
-- [ ] about & contact & other non-articles
+- [/] about & contact & other non-articles
 - [ ] footer (disclaimer, cookies)
 - [ ] rss (as a cookie alternative)
-- [ ] date & author
+- [x] date & author
 - [ ] basic images (its own featureset for non-basic)
 - [ ] analytics
 - [ ] seo stuff (robots, sitemap)
-- [ ] micro-/structured-data for embedding
+- [x] micro-/structured-data for embedding
 - [ ] spellcheck
 
 ### design
