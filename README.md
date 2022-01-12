@@ -47,3 +47,24 @@ CNAME file.
 This repository holds the raw content and the published content.  I also keep 
 some draft content in a git submodule that is not a public repo; not every-
 thing that i type needs to be published.
+
+
+Epic: show-worthiness
+---------------------
+
+### features
+- [ ] index page
+- [ ] about & contact & other non-articles
+- [ ] footer (disclaimer, cookies)
+- [ ] rss (as a cookie alternative)
+- [ ] date & author
+- [ ] basic images (its own featureset for non-basic)
+- [ ] analytics
+- [ ] seo stuff (robots, sitemap)
+- [ ] micro-/structured-data for embedding
+- [ ] spellcheck
+
+### design
+- [ ] refine the illumination
+- [ ] dark mode
+- [ ] color scheme
