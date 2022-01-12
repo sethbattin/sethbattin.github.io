@@ -1,8 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: 24px;
+  padding: 0 .75rem;
 }
 body {
-  margin: .75rem;
+  margin: 0;
 }
 p {
   margin: 0;
@@ -35,3 +39,41 @@ h1 + p::first-letter {
   line-height: 2.5rem;
 }
 
+/* width and breakpoints
+ * TODO: size article width rather than body after article elements exist */
+/* TBD breakpoints via env (since media queries don't work) */
+:root {
+  --size-med: 540px;
+  --size-lrg: 960px;
+  --size-xlg: 1280px;
+}
+
+@media screen {
+  body {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  body {
+    width: var(--size-med);
+    margin-right: calc(100% - var(--size-med));
+  }
+}
+@media screen and (min-width: 960px) {
+  body {
+    width: calc(0.75 * var(--size-lrg));
+    margin-left: calc(33% - calc( 0.25 * var(--size-lrg)));
+    margin-right: calc(67% - calc( 0.5 * var(--size-lrg)));
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 36px;
+  }
+  body {
+    width: calc(1.125 * var(--size-lrg));
+  }
+}
