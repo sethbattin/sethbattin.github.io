@@ -27,10 +27,10 @@ h2 {
 }
 
 /* illumination? nah, newspaper style */
-h1 + p {
+article > p:first-of-type {
   text-indent: 0;
 }
-h1 + p::first-letter {
+article > p:first-of-type::first-letter {
   font-size: 300%;
   padding: .25rem;
   padding-right: 0;
