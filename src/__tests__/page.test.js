@@ -6,15 +6,13 @@ Some Markdown
 
 this file exists.
       `
-  it("parses markdown", async () => {
-    expect.assertions(2)
-    const { markup } = await parse(testMarkdown)
+  it("parses markdown", () => {
+    const { markup } = parse(testMarkdown)
     expect(markup).toMatch("<h1 id=\"some-markdown\">Some Markdown</h1>")
     expect(markup).toMatch("<p>this file exists.")
   })
-  it("produces an article", async () => {
-    expect.assertions(1)
-    const { markup } = await parse(testMarkdown, {dates: ['2022-01-10']})
+  it("produces an article", () => {
+    const { markup } = parse(testMarkdown, {dates: ['2022-01-10']})
     // crude body selector
     const article = markup.split('body>\n')[1].slice(0, -2)
     expect(article).toMatchInlineSnapshot(`

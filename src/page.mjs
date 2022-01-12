@@ -19,7 +19,7 @@ function layout( htmlBody, meta) {
 
 
 // parse markdown and return { markup: string, meta: object}
-export async function parse(mdContent, options = { }) {
+export function parse(mdContent, options = { }) {
   const tokens = marked.lexer(mdContent)
   const dates = options.dates || []
   const shortDate = dates[0] || nowShortDate()
