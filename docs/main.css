@@ -8,11 +8,6 @@ html {
 body {
   margin: 0;
 }
-p {
-  margin: 0;
-  text-indent: 2.5rem;
-  line-height: 2rem;
-}
 time {
   line-height: 2rem;
 }
@@ -29,6 +24,11 @@ h2 {
   margin: 0.5rem 0;
 }
 
+article > p {
+  margin: 0;
+  text-indent: 2.5rem;
+  line-height: 2rem;
+}
 /* illumination? nah, newspaper style */
 article > p:first-of-type {
   text-indent: 0;
@@ -84,4 +84,24 @@ article > address {
   body {
     width: calc(1.125 * var(--size-lrg));
   }
+}
+
+blockquote.twitter-tweet {
+  border: 1px solid rgb(207, 217, 222);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-left: 0;
+  width: 550px;
+}
+blockquote.twitter-tweet:hover {
+  background-color: rgb(247,249,249);
+  cursor: pointer;
+}
+blockquote.twitter-tweet button {
+  color: rgb(29, 155, 240);
+  margin: 1rem auto 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid;
 }
