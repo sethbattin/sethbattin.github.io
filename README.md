@@ -70,4 +70,4 @@ Epic: show-worthiness
 ### deferred
 - [ ] make the author microdata nicer, maybe a custom renderer
 - [ ] rss (as a cookie alternative)
-- [ ] spellcheck
+- [ ] spellcheck - use hunspell and also blog about it

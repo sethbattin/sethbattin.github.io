@@ -15,7 +15,7 @@
   },
   "jest": {
     "testMatch": [
-      "**/__tests__/**/*.[jt]s?(x)", 
+      "**/__tests__/**/*.[jt]s?(x)",
       "**/?(*.)+(spec|test).[jt]s?(x)"
     ]
   },
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "jest": "^27.4.7",
-    "serve": "^13.0.2"
+    "serve": "^13.0.2",
+    "spellchecker": "^3.7.1"
   }
 }
