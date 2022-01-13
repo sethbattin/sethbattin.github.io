@@ -27,3 +27,5 @@ Luckily there are a plethora of options for hosted blogs as well.  But those als
 Github to the rescue.  [Github pages][github-pages] they cover all my constraints about ownership and simplicity+flexibility, while _also_ hosting the files for free.
 
 Great.  Now on to the [small problem of generating those files][blogging with markdown].  Thanks for reading; welcome to my blog.
+
+<img itemprop="image" src="/starting/hero.png" alt="a crappy turtle sketch" title="actual picture of me starting this blog" width=400 />
