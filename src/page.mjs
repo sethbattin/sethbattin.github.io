@@ -13,13 +13,22 @@ function layout( htmlBody, meta) {
     <article itemscope itemtype="https://schema.org/Article">
     ${htmlBody}
     <address>
-      By <a href="/seth-battin" rel="author">Seth Battin</a>
+      By <a href="/seth-battin" itemprop="author" rel="author" itemscope itemtype="https://schema.org/Person">
+        <span itemprop="name">Seth Battin</span>
+      </a>
     </address>
     </article>
   </body>
 </html>`
 }
 
+export const microdataHeading = (text, level, raw, slugger) => {
+  const micro = (level === 1) ? ' itemprop="headline"' : ''
+  return `<h${level} id="${slugger.slug(text, { dryrun: true })}"${micro}>${text}</h${level}>
+`
+}
+
+marked.use({renderer: { heading: microdataHeading }})
 
 // parse markdown and return { markup: string, meta: object}
 export function parse(mdContent, options = { }) {
