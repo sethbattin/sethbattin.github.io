@@ -56,15 +56,18 @@ Epic: show-worthiness
 - [ ] index page
 - [/] about & contact & other non-articles
 - [ ] footer (disclaimer, cookies)
-- [ ] rss (as a cookie alternative)
 - [x] date & author
-- [ ] basic images (its own featureset for non-basic)
+- [x] basic images (its own featureset for non-basic)
 - [ ] analytics
 - [ ] seo stuff (robots, sitemap)
 - [x] micro-/structured-data for embedding
-- [ ] spellcheck
 
 ### design
 - [ ] refine the illumination
 - [ ] dark mode
 - [ ] color scheme
+
+### deferred
+- [ ] make the author microdata nicer, maybe a custom renderer
+- [ ] rss (as a cookie alternative)
+- [ ] spellcheck
