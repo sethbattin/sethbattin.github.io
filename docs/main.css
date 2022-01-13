@@ -86,6 +86,7 @@ article > address {
   }
 }
 
+/* embedded tweets before their loading script */
 blockquote.twitter-tweet {
   border: 1px solid rgb(207, 217, 222);
   border-radius: 12px;
@@ -97,8 +98,15 @@ blockquote.twitter-tweet:hover {
   background-color: rgb(247,249,249);
   cursor: pointer;
 }
+blockquote.twitter-tweet.loading {
+  background-color: rgb(247,249,249);
+  cursor: initial;
+}
 blockquote.twitter-tweet button {
   color: rgb(29, 155, 240);
+  padding: 0.25rem;
+  font-weight: bold;
+  cursor: pointer;
   margin: 1rem auto 0;
   width: 100%;
   background-color: white;
