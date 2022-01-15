@@ -1,8 +1,17 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --color-primary: #090909;
+  --font-size-base: 24px;
+}
+@media screen and (min-width: 1280px) {
+  :root {
+    --font-size-base: 36px;
+  }  
+}
 html {
-  font-size: 24px;
+  font-size: var(--font-size-base);
   padding: 0 .75rem;
 }
 body {
@@ -16,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   font-variant: small-caps;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 0.75rem 0;
 }
 h2 {
@@ -24,6 +33,99 @@ h2 {
   margin: 0.5rem 0;
 }
 
+/* I guess I'm making bootstrap now */
+.d-f {
+  display: flex;
+}
+.f-ai-e {
+  align-items: end;
+}
+.f-jc-sb {
+  justify-content: space-between;
+}
+
+/* this is page-specific; inline it? */
+header.site-title {
+  border-bottom: 1px solid var(--color-primary);
+}
+.site-title .ticker {
+  font-size: 0.5rem;
+}
+.site-title h1 {
+  margin: 0;
+  text-align: center;
+  font-family: serif;
+  font-size: 8vw;
+}
+@media screen and (min-width: 1280px) {
+  .site-title h1 {
+    font-size: 3rem;
+  }
+}
+.site-title p {
+}
+.site-title time {
+}
+
+/* navigation is outside the main header so it can be a column among others */
+nav {
+  /* fix the base size */
+  font-size: 0.75rem; 
+}
+nav summary {
+  list-style: none;  
+} 
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+nav ul > li {
+  margin: .25rem 0
+}
+
+
+@media screen and (min-width: 1280px) {
+  nav {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 1279px) {
+  nav * {
+    display: inline-block;
+  }
+  nav details {
+    display: block;
+  }
+  nav summary {
+    display: none;
+  }
+  nav ul {
+    padding: 0;
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content-flex-start;
+    gap: 0.5rem 1.5rem;
+  }
+  nav ul > li {
+    flex-shrink: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  nav ul {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1280px) {
+  nav {
+    width: 25%;
+  }  
+}
+
+/* these styles apply to post pages */
 article > p {
   margin: 0;
   text-indent: 2.5rem;
@@ -33,6 +135,7 @@ article > p {
 article > p:first-of-type {
   text-indent: 0;
 }
+/* scss nested selectors would be useful */
 article > p:first-of-type::first-letter {
   font-size: 300%;
   padding: .25rem;
@@ -64,13 +167,13 @@ article > address {
 }
 
 @media screen and (min-width: 540px) {
-  body {
+  article {
     width: var(--size-med);
     margin-right: calc(100% - var(--size-med));
   }
 }
 @media screen and (min-width: 960px) {
-  body {
+  article {
     width: calc(0.75 * var(--size-lrg));
     margin-left: calc(33% - calc( 0.25 * var(--size-lrg)));
     margin-right: calc(67% - calc( 0.5 * var(--size-lrg)));
@@ -78,10 +181,7 @@ article > address {
 }
 
 @media screen and (min-width: 1280px) {
-  html {
-    font-size: 36px;
-  }
-  body {
+  article {
     width: calc(1.125 * var(--size-lrg));
   }
 }
