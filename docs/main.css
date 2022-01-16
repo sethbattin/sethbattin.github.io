@@ -18,10 +18,6 @@ html {
 body {
   margin: 0;
 }
-time {
-  line-height: 2rem;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-variant: small-caps;
   color: var(--color-primary);
@@ -158,7 +154,33 @@ nav ul > li {
 @media screen and (min-width: 1280px) {
   nav {
     width: 25%;
+    display: inline-block;
+    float: left;
   }  
+}
+
+main article {
+  margin-left: 0;
+  font-size: 0.5rem;
+  column-count: auto;
+  column-width: 35ch;
+}
+main article h2 {
+  margin: 0;
+  white-space: nowrap;
+  column-span: all;
+  border-bottom: 1px solid var(--color-primary);
+}
+main article address {
+  margin: 0 1rem;
+  display: inline-block;
+}
+main article time {
+  line-height: 1rem;
+}
+main article p {
+  line-height: 1rem;
+  text-indent: 1rem;
 }
 
 /* these styles apply to post pages */
@@ -179,6 +201,10 @@ article > p:first-of-type::first-letter {
   vertical-align: sub;
   float: left;
   line-height: 2.5rem;
+}
+
+article time {
+  line-height: 2rem;
 }
 
 article > address {
