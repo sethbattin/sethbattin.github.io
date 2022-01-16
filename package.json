@@ -9,6 +9,7 @@
   "type": "module",
   "scripts": {
     "mark": "node $npm_config_xmod node_modules/.bin/marked --",
+    "vizreg": "node $npm_config_xmod scripts/vizreg.mjs",
     "publish": "node $npm_config_xmod scripts/publish.mjs",
     "start": "npx serve docs",
     "test": "node $npm_config_xvmmod node_modules/.bin/jest "
@@ -30,10 +31,11 @@
   },
   "homepage": "https://github.com/sethbattin/sethbattin.github.io#readme",
   "dependencies": {
-    "marked": "^4.0.8"
+    "marked": "^4.0.10"
   },
   "devDependencies": {
     "jest": "^27.4.7",
+    "puppeteer": "^13.0.1",
     "serve": "^13.0.2",
     "spellchecker": "^3.7.1"
   }
