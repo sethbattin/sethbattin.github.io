@@ -3,6 +3,7 @@
 }
 :root {
   --color-primary: #090909;
+  --color-bg: white;
   --font-size-base: 24px;
 }
 @media screen and (min-width: 1280px) {
@@ -23,6 +24,7 @@ time {
 
 h1, h2, h3, h4, h5, h6 {
   font-variant: small-caps;
+  color: var(--color-primary);
 }
 h1 {
   font-size: 3rem;
@@ -78,10 +80,44 @@ nav summary {
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0.5rem 0;
+  margin: 0;
 }
 nav ul > li {
   margin: .25rem 0
+}
+@media screen and (max-width: 539px) {
+  nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: var(--color-bg);
+  }
+  nav ul {
+    padding: 0 1rem;
+  }
+  nav details {
+  }
+  nav details summary {
+    width: 0;
+    white-space: nowrap;
+    padding: 1rem 0 1rem 2rem;
+  }
+  nav details summary::before {
+    content: "?";
+    position: relative;
+    left: -1rem;
+  }
+
+  nav details[open] {
+    margin-right: 0;
+  }
+  nav details[open] summary {
+    width: initial;
+    padding: 1rem;
+  }
+  nav details[open] summary::before {
+    content: "";
+  }
 }
 
 

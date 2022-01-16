@@ -1,9 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html onreadystatechange="console.log('yyyeee')">
   <head>
     <title>Seth.how Blog</title>
     <link rel="stylesheet" type="text/css" href="/main.css" >
   </head>
-  <body>
+  <body 
+    onload="document.querySelector('nav details').open=window.matchMedia('(min-width: 539px)').matches"
+  >
     <header class="site-title">
     <h1>Seth.how? Blog</h1>
     <!-- get rid of this styling div; it sucks; use flexbox for direct child elements -->

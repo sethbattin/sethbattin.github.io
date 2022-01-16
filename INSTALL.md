@@ -36,6 +36,22 @@ npm run mark -- -i INSTALL.md
 # ...
 ```
 
+Index Page
+----------
+Notes to self about how to go about this.
+
+Load the list of files from the public directory (because that's what has
+been published).  
+Process the index from markdown too
+Inject nodes based on the list of pages
+pages need excerpts, for this and for descriptions
+make and style a layout; priorities:
+ - simple markup
+ - a11y
+ - reader mode
+
+
+
 Publishing
 ----------
 ```bash
