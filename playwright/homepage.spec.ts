@@ -1,10 +1,11 @@
-import { test, expect } from '@playwright/test';
+import { expect } from '@playwright/test';
+import { test } from './breakpoints-test';
 
 test.describe('homepage', () => {
-  test.beforeEach(async ({ page}) => {
+  test.beforeEach(async ({ page }) => {
     await page.goto('/');
   });
-  test('visual', async ({ page }) => {
-    expect(await page.screenshot()).toMatchSnapshot('homepage.png');
+  test('visual', async ({ page, width }) => {
+  expect(await page.screenshot()).toMatchSnapshot(`homepage-${width}.png`);
   });
 });
