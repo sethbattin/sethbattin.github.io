@@ -80,4 +80,26 @@ But it's not that bad:
 3. include in package.json `"type": "module"`
 4. run the script `npm test` (also from package.json)
 
+Visual Regression
+-----------------
+OMG the holy grail.
+
+playwright is _almost_ perfect out of the box.  Running it effectively is not.
+
+For some reason it screws up the font in my WSL shell when i run it.  
+I tihnk it's https://github.com/microsoft/terminal/issues/280
+I tried this to fix that problem:
+
+```
+/// package.json
+/// scripts: {
+/// ...
+    "vizreg": "npx playwright test -c playwright/playwright.config.ts || npm run postvizreg",
+    "postvizreg": "if [ $( exit $? ) }; then echo 'success'; else npm run vizreg-report; fi",
+    "vizreg-report": "x-www-browser http://localhost:3001 & npx serve -p 3001 playwright/html-report",
+
+```
+
+but it still happens, so i'm just turning off the auto-show-report and leaving it.
+
 [marked]: https://marked.js.org/ "Marked - markdown processor for javascript"

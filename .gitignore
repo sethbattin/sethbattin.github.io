@@ -1,4 +1,4 @@
 node_modules/**
 posts/_private
-playwright-report/**
+playwright/html-report/**
 playwright/test-results/**

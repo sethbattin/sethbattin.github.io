@@ -10,6 +10,7 @@
   "scripts": {
     "mark": "node $npm_config_xmod node_modules/.bin/marked --",
     "vizreg": "npx playwright test -c playwright/playwright.config.ts",
+    "vizreg-report": "npx serve -p 3001 playwright/html-report",
     "publish": "node $npm_config_xmod scripts/publish.mjs",
     "start": "npx serve docs",
     "test": "node $npm_config_xvmmod node_modules/.bin/jest "

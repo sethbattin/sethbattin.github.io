@@ -9,10 +9,7 @@ const config: PlaywrightTestConfig = {
   {name: 'med-min',  use: { width: 540}},
   {name: 'sm',  use: { width: 539}},
   ],
-  reporter: [ [ 'html'
-    // this just breaks the show-report subcommand :(
-    //, { outputFolder: './playwright/html-report' } 
-   ] ],
+  reporter: [ [ 'html', { open: 'never', outputFolder: './playwright/html-report' } ] ],
   testDir: '.',
   use: {
     browserName: 'firefox',  
