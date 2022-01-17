@@ -1,18 +1,15 @@
-import puppeteer from "puppeteer";
+import playwright from "playwright";
 
-puppeteer.launch({
+playwright.firefox.launch({
 //  executablePath: '/usr/bin/wslview' 
 }).then(async browser => {
-  const page = await browser.newPage();
+  for 
+  const width = 960;
+  const height = 720;
+  const context = await browser.newContext({viewport: {width, height} });
+  const page = await context.newPage();
   await page.goto('http://localhost:3000');
-  const dims = await page.evaluate(() => {
-  return {
-          width: document.documentElement.clientWidth,
-          height: document.documentElement.clientHeight,
-          deviceScaleFactor: window.devicePixelRatio,
-        };
-  });
-
-  console.log({dims});
+  await page.waitForLoadState('networkidle');
+  await page.screenshot({ path: `homepage-firefox-${width}.png`, fullPage: true })
   await browser.close();
 })

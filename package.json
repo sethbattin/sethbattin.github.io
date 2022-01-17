@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "jest": "^27.4.7",
-    "puppeteer": "^13.0.1",
+    "playwright": "^1.17.2",
     "serve": "^13.0.2",
     "spellchecker": "^3.7.1"
   }
