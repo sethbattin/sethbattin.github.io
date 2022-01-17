@@ -9,7 +9,7 @@
   "type": "module",
   "scripts": {
     "mark": "node $npm_config_xmod node_modules/.bin/marked --",
-    "vizreg": "node $npm_config_xmod scripts/vizreg.mjs",
+    "vizreg": "npx playwright test -c playwright/playwright.config.ts",
     "publish": "node $npm_config_xmod scripts/publish.mjs",
     "start": "npx serve docs",
     "test": "node $npm_config_xvmmod node_modules/.bin/jest "
@@ -34,6 +34,7 @@
     "marked": "^4.0.10"
   },
   "devDependencies": {
+    "@playwright/test": "^1.17.2",
     "jest": "^27.4.7",
     "playwright": "^1.17.2",
     "serve": "^13.0.2",
