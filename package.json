@@ -13,6 +13,7 @@
     "vizreg-sm": "PW_PROJ='--project sm' npm run vizreg",
     "vizreg-report": "npx serve -p 3001 playwright/html-report",
     "publish": "node $npm_config_xmod scripts/publish.mjs",
+    "homepage": "node $npm_config_xmod scripts/homepage.mjs",
     "start": "npx serve docs",
     "test": "node $npm_config_xvmmod node_modules/.bin/jest "
   },
