@@ -4,16 +4,21 @@
 :root {
   --color-primary: #090909;
   --color-bg: white;
-  --font-size-base: 24px;
+  --font-size-base: 16px;
 }
 @media screen and (min-width: 1280px) {
   :root {
-    --font-size-base: 36px;
+    --font-size-base: 24px;
   }  
 }
 html {
   font-size: var(--font-size-base);
-  padding: 0 .75rem;
+  padding: 0 2rem 0 1rem;
+}
+@media screen and (min-width: 540px) {
+  html {
+    padding: 0 1rem;
+  }
 }
 body {
   margin: 0;
@@ -23,12 +28,12 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-primary);
 }
 h1 {
-  font-size: 3rem;
-  margin: 0.75rem 0;
+  font-size: 4rem;
+  margin: 1rem 0;
 }
 h2 {
   font-size: 2rem;
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
 }
 
 /* I guess I'm making bootstrap now */
@@ -47,17 +52,21 @@ header.site-title {
   border-bottom: 1px solid var(--color-primary);
 }
 .site-title .ticker {
-  font-size: 0.5rem;
+  font-size: 0.75rem;
+}
+.site-title .ticker > * {
+  margin: 0.5rem 0;
 }
 .site-title h1 {
-  margin: 0;
+  margin: 0 auto;
+  width: fit-content;
   text-align: center;
   font-family: serif;
   font-size: 8vw;
 }
 @media screen and (min-width: 1280px) {
   .site-title h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 .site-title p {
@@ -66,9 +75,10 @@ header.site-title {
 }
 
 /* navigation is outside the main header so it can be a column among others */
-nav {
-  /* fix the base size */
-  font-size: 0.75rem; 
+@media screen and (min-width: 540px) {
+  nav {
+    border-bottom: 1px solid var(--color-primary)
+  }
 }
 nav summary {
   list-style: none;  
@@ -79,7 +89,7 @@ nav ul {
   margin: 0;
 }
 nav ul > li {
-  margin: .25rem 0
+  margin: .5rem 0
 }
 @media screen and (max-width: 539px) {
   nav {
@@ -139,7 +149,7 @@ nav ul > li {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content-flex-start;
-    gap: 0.5rem 1.5rem;
+    gap: 0.75rem 2rem;
   }
   nav ul > li {
     flex-shrink: 0;
@@ -153,17 +163,20 @@ nav ul > li {
 }
 @media screen and (min-width: 1280px) {
   nav {
-    width: 25%;
+    width: calc(20% - 0.5rem);
     display: inline-block;
     float: left;
+    margin-right: 0.5rem;
   }  
 }
 
 main article {
   margin-left: 0;
-  font-size: 0.5rem;
+  width: calc(60% - 0.5rem);
+  margin-right: 0.5rem;
   column-count: auto;
-  column-width: 35ch;
+  column-gap: 0.5rem;
+  column-width: 30ch;
 }
 main article h2 {
   margin: 0;
@@ -172,21 +185,21 @@ main article h2 {
   border-bottom: 1px solid var(--color-primary);
 }
 main article address {
-  margin: 0 1rem;
+  margin: 0 2rem;
   display: inline-block;
 }
 main article time {
-  line-height: 1rem;
+  line-height: 2rem;
 }
 main article p {
-  line-height: 1rem;
-  text-indent: 1rem;
+  line-height: 1.5rem;
+  text-indent: 1.5rem;
 }
 
 /* these styles apply to post pages */
 article > p {
   margin: 0;
-  text-indent: 2.5rem;
+  text-indent: 3rem;
   line-height: 2rem;
 }
 /* illumination? nah, newspaper style */
@@ -195,21 +208,19 @@ article > p:first-of-type {
 }
 /* scss nested selectors would be useful */
 article > p:first-of-type::first-letter {
-  font-size: 300%;
-  padding: .25rem;
-  padding-right: 0;
-  vertical-align: sub;
+  font-size: 3rem;
+  padding: 0;
   float: left;
-  line-height: 2.5rem;
+  line-height: 3rem;
 }
 
 article time {
-  line-height: 2rem;
+  line-height: 3rem;
 }
 
 article > address {
   text-align: right;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 /* width and breakpoints
@@ -230,21 +241,27 @@ article > address {
 
 @media screen and (min-width: 540px) {
   article {
-    width: var(--size-med);
-    margin-right: calc(100% - var(--size-med));
+    width: calc( var(--size-med) - 2rem);
+    margin-right: calc(100% - var(--size-med) - 2rem);
   }
 }
 @media screen and (min-width: 960px) {
   article {
-    width: calc(0.75 * var(--size-lrg));
-    margin-left: calc(33% - calc( 0.25 * var(--size-lrg)));
-    margin-right: calc(67% - calc( 0.5 * var(--size-lrg)));
+    width: calc(0.66 * var(--size-lrg));
+    margin-left: calc(33% - calc( 0.22 * var(--size-lrg)));
+    margin-right: calc(67% - calc( 0.44 * var(--size-lrg)));
   }
 }
 
 @media screen and (min-width: 1280px) {
   article {
-    width: calc(1.125 * var(--size-lrg));
+    width: calc(0.66 * var(--size-xlg));
+    margin-left: calc(33% - calc( 0.22 * var(--size-xlg)));
+    margin-right: calc(67% - calc( 0.44 * var(--size-xlg)));
+
+  }
+  h1 {
+    width: calc( 8 / 9 * calc(var(--size-xlg) - 2rem));
   }
 }
 
@@ -252,7 +269,7 @@ article > address {
 blockquote.twitter-tweet {
   border: 1px solid rgb(207, 217, 222);
   border-radius: 12px;
-  padding: 1rem;
+  padding: 24px;
   margin-left: 0;
   width: 550px;
 }
@@ -266,7 +283,7 @@ blockquote.twitter-tweet.loading {
 }
 blockquote.twitter-tweet button {
   color: rgb(29, 155, 240);
-  padding: 0.25rem;
+  padding: 24px;
   font-weight: bold;
   cursor: pointer;
   margin: 1rem auto 0;
