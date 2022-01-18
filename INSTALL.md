@@ -114,4 +114,10 @@ I tried this to fix that problem:
 
 but it still happens, so i'm just turning off the auto-show-report and leaving it.
 
+Images
+------
+consider using [compressor.js].
+
+
 [marked]: https://marked.js.org/ "Marked - markdown processor for javascript"
+[compressor.js]: https://fengyuanchen.github.io/compressorjs/ "compressor.js - javascript image compressor"
