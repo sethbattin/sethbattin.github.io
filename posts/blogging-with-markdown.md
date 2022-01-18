@@ -13,6 +13,24 @@ The real learning is in knowing what to avoid.  I hope to list here a long set o
 
 I started with the ideas I _should_ have understood well.
 
+## design philosophy
+
+Goal 0: I want to make a system where I can write markdown and produce html.
+Goal 2: I want that html to be very simple, accessible, and functional
+Goal 3: I want to avoid creating special-case markdown to accomplish html nuances
+Goal 4: I want to build a featureful blogging platform within the above contraints.
+
+### Technical methodologies:
+Categories:
+ - use the html attribute [rel=tag] for categories based on the path convention `/tag/*`
+ - implement a markedjs handler for links to inject the `rel` attribute for this path
+Excerpt:
+ - use a block quote
+ - ....
+ - profit
+publish date
+ - use git log dates
+
 
 ----
 shorthand notes:
@@ -33,3 +51,10 @@ please no meta-data
 todo:
  - mdx external
  - next-mdx-remote example might do exactly that
+
+[unused]
+
+[/tag/yes-used]
+
+[rel=tag]: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#attr-tag "MDN: HTML attributes"
+[unused]: https://google.com "an unused link to test marked.js"

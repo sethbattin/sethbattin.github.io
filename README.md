@@ -71,3 +71,12 @@ Epic: show-worthiness
 - [ ] make the author microdata nicer, maybe a custom renderer
 - [ ] rss (as a cookie alternative)
 - [ ] spellcheck - use hunspell and also blog about it
+
+
+long term web stuff
+- [ ] pingback on api subdomain [https://www.hixie.ch/specs/pingback/pingback]
+- [ ] rel="tag" to link to glossary pages
+- [ ] web app manifest ("download this ebook", maybe?)
+- [ ] rel="author" instead of microdata nonsense
+- [ ] font-size 36 or 24 are both not reasonable; headings should be multiples, not the basis
+- [ ] sitemap style sheet a la duluth dish via wordpress plugin, but make it super-weird
