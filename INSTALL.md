@@ -86,6 +86,18 @@ OMG the holy grail.
 
 playwright is _almost_ perfect out of the box.  Running it effectively is not.
 
+### Check screenshots
+
+Compare styles before and after css changes:
+```bash
+npm run vizreg
+```
+
+Update snapshots to current values:
+```bash
+npx playwright test -c playwright/playwright.config.ts -u`
+```
+
 For some reason it screws up the font in my WSL shell when i run it.  
 I tihnk it's https://github.com/microsoft/terminal/issues/280
 I tried this to fix that problem:
