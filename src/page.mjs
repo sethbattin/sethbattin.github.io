@@ -2,8 +2,9 @@ import { promises } from 'fs'
 const { readFile } = promises
 import { marked } from 'marked'
 
-function layout( htmlBody, meta) {
-  const { title } = meta
+function layout( meta) {
+  const { title, tokens } = meta
+  const content = marked.parser(tokens)
   return `<html>
   <head>
     <title>Seth.how Blog${title && ` | ${title}`}</title>
@@ -11,7 +12,7 @@ function layout( htmlBody, meta) {
   </head>
   <body>
     <article itemscope itemtype="https://schema.org/Article">
-    ${htmlBody}
+    ${content}
     <address>
       By <a href="/seth-battin" itemprop="author" rel="author" itemscope itemtype="https://schema.org/Person">
         <span itemprop="name">Seth Battin</span>
@@ -22,7 +23,7 @@ function layout( htmlBody, meta) {
 </html>`
 }
 
-export const microdataHeading = (text, level, raw, slugger) => {
+const microdataHeading = (text, level, raw, slugger) => {
   const micro = (level === 1) ? ' itemprop="headline"' : ''
   return `<h${level} id="${slugger.slug(text, { dryrun: true })}"${micro}>${text}</h${level}>
 `
@@ -38,8 +39,9 @@ export function parse(mdContent, options = { }) {
   const publishedTokens = getPublishedTokens(shortDate)
   tokens.splice(1, 0, ...publishedTokens)
   const heading = tokens.find(({type, depth}) => type === 'heading' && depth === 1)
-  const content = marked.parser(tokens)
-  return {markup: layout(content, {title: heading.text}), meta: {tokens}}
+  const meta = { tokens, publishedDate: shortDate, title: heading.text }
+  const markup = layout(meta)
+  return {markup, meta}
 }
 
 function nowShortDate() {
