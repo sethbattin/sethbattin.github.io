@@ -15,7 +15,7 @@
     "publish": "node $npm_config_xmod scripts/publish.mjs",
     "homepage": "node $npm_config_xmod scripts/homepage.mjs",
     "start": "npx serve docs",
-    "test": "node $npm_config_xvmmod node_modules/.bin/jest "
+    "test": "node $npm_config_xvmmod node_modules/.bin/jest --roots src "
   },
   "jest": {
     "testMatch": [

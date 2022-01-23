@@ -8,7 +8,15 @@ const gitFileDates = async (outFile) =>
     .then(({stdout}) => stdout.split('\n').filter(Boolean))
 
 
-fs.promises.readdir('docs', {withFileTypes: true}).then(async files => {
+postDates().then(publishDates => {
+console.log(publishDates)i
+  // get snippets
+  // put snippets into index template
+  // write html
+})
+
+async function postDates () {
+  const files = await fs.promises.readdir('docs', {withFileTypes: true})
   const dirs = files
     .filter(dirent => dirent.isDirectory())
 
@@ -45,7 +53,5 @@ fs.promises.readdir('docs', {withFileTypes: true}).then(async files => {
     return 0
   })
 
-
-  
-  console.log({files, dirs, sources, publishDates}, publishDates)
-})
+  return publishDates
+}

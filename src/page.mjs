@@ -2,7 +2,7 @@ import { promises } from 'fs'
 const { readFile } = promises
 import { marked } from 'marked'
 
-function layout( meta) {
+function article ( meta) {
   const { title, tokens } = meta
   const content = marked.parser(tokens)
   return `<html>
@@ -31,16 +31,24 @@ const microdataHeading = (text, level, raw, slugger) => {
 
 marked.use({renderer: { heading: microdataHeading }})
 
+const defaults = {
+  layout: article
+}
+
 // parse markdown and return { markup: string, meta: object}
-export function parse(mdContent, options = { }) {
+export function parse(mdContent, _options = { }) {
+  const options = Object.assign({}, defaults, _options)
   const tokens = marked.lexer(mdContent)
   const dates = options.dates || []
   const shortDate = dates[0] || nowShortDate()
   const publishedTokens = getPublishedTokens(shortDate)
-  tokens.splice(1, 0, ...publishedTokens)
-  const heading = tokens.find(({type, depth}) => type === 'heading' && depth === 1)
+  let headingPos
+  const heading = tokens.find(
+    ({type, depth}, i) => (type === 'heading' && depth === 1) ? (headingPos = i, true) : false
+  )
+  tokens.splice(headingPos + 1, 0, ...publishedTokens)
   const meta = { tokens, publishedDate: shortDate, title: heading.text }
-  const markup = layout(meta)
+  const markup = options.layout(meta)
   return {markup, meta}
 }
 
