@@ -5,6 +5,14 @@ function htmlDoc(headAndBody) {
 <html>${headAndBody}</html>`
 }
 
+export function pubdate(shortDate) {
+  return `
+<time datetime="${shortDate}" itemProp="datePublished">
+  ${(new Date(`${shortDate} 23:59:00`)).toDateString()}
+</time>
+`
+}
+
 export function article ( meta) {
   const { title, tokens } = meta
   const content = marked.parser(tokens)
@@ -42,7 +50,7 @@ function homepageArticle (lengthLimit, meta) {
   const category = 'Variety'
   return `<article>
     <h2>${title}</h2>
-    <time datetime="${publishedDate}">${publishedDate}</time>
+    ${pubdate(publishedDate)}
     <address><a rel="author" href="/seth-battin">Seth Battin</a></address>
     ${marked.parser(textTokens)}
     <a href="/${name}/">Continue reading - ${category} pg 1</a>

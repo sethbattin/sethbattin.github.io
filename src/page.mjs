@@ -1,6 +1,6 @@
 import { promises } from 'fs'
 import { marked } from 'marked'
-import { article } from './layout.mjs'
+import { article, pubdate } from './layout.mjs'
 
 const microdataHeading = (text, level, raw, slugger) => {
   const micro = (level === 1) ? ' itemprop="headline"' : ''
@@ -20,11 +20,7 @@ function nowShortDate() {
 }
 
 const getPublishedTokens = (shortDate) =>
-  marked.lexer(`
-<time datetime="${shortDate}" itemProp="datePublished">
-  ${(new Date(`${shortDate} 23:59:00`)).toDateString()}
-</time>
-`)
+  marked.lexer(pubdate(shortDate))
 
 // parse markdown and return { markup: string, meta: object}
 export function parse(mdContent, _options = { }) {
