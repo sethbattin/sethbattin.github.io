@@ -23,6 +23,12 @@ function article ( meta) {
 </html>`
 }
 
+export function headline ( meta ) {
+  const { tokens } = meta
+  console.log({tokens});
+  return 'blah';
+}
+
 const microdataHeading = (text, level, raw, slugger) => {
   const micro = (level === 1) ? ' itemprop="headline"' : ''
   return `<h${level} id="${slugger.slug(text, { dryrun: true })}"${micro}>${text}</h${level}>
@@ -33,6 +39,17 @@ marked.use({renderer: { heading: microdataHeading }})
 
 const defaults = {
   layout: article
+}
+
+export function home(latest, second, third) {
+  return `<webpage>${latest}
+
+  second
+  ${second}
+
+  third
+  ${third}
+  `
 }
 
 // parse markdown and return { markup: string, meta: object}
