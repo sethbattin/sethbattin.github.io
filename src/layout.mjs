@@ -27,7 +27,7 @@ export function article ( meta) {
 }
 
 function homepageArticle (lengthLimit, meta) {
-  const {tokens, publishedDate, title} = meta
+  const {tokens, publishedDate, title, name} = meta
 
   let lengthTotal = 0
   const textTokens = tokens.filter(t => {
@@ -45,7 +45,7 @@ function homepageArticle (lengthLimit, meta) {
     <time datetime="${publishedDate}">${publishedDate}</time>
     <address><a rel="author" href="/seth-battin">Seth Battin</a></address>
     ${marked.parser(textTokens)}
-    <a href="/eventual-canonical-link/">Continue reading - ${category} pg 1</a>
+    <a href="/${name}/">Continue reading - ${category} pg 1</a>
   </article>`
 }
 

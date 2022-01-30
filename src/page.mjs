@@ -38,7 +38,7 @@ export function parse(mdContent, _options = { }) {
     ({type, depth}, i) => (type === 'heading' && depth === 1) ? (headingPos = i, true) : false
   )
   tokens.splice(headingPos + 1, 0, ...publishedTokens)
-  const meta = { tokens, publishedDate: shortDate, title: heading.text }
+  const meta = { ...options, tokens, publishedDate: shortDate, title: heading.text }
   const markup = options.layout(meta)
   return {markup, meta}
 }

@@ -16,7 +16,7 @@ postDates().then(async publishDates => {
     const markdown = await fs.promises.readFile(post, 'utf-8')
     const layout = i === 0 ? headline : frontPage
     //TODO: use `layout` here to control the result
-    return parse(markdown, { dates, layout })
+    return parse(markdown, { dates, layout, name })
   }, [])
   // get snippits
   const [latest, second, third, ...others] = await Promise.all(loads)
