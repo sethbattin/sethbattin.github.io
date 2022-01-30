@@ -26,20 +26,18 @@ export function article ( meta) {
 `)
 }
 
-export function headline (meta) {
+function homepageArticle (lengthLimit, meta) {
   const {tokens, publishedDate, title} = meta
 
-//console.log(tokens.slice(0,5))
   let lengthTotal = 0
-  const lengthLimit = 1500
   const textTokens = tokens.filter(t => {
     if (t.type !== 'paragraph') {
       return false
     }
+    const under = lengthTotal < lengthLimit
     lengthTotal += t.text.length
-    return lengthTotal < lengthLimit
+    return under
   })
-
   //TODO: tags
   const category = 'Variety'
   return `<article>
@@ -51,8 +49,13 @@ export function headline (meta) {
   </article>`
 }
 
+
+export function headline (meta) {
+  return homepageArticle(1500, meta)
+}
+
 export function frontPage (meta) {
-  return `I am on the front page ${JSON.stringify(meta).slice(0, meta && meta.options && meta.options.length || 200)}`
+  return homepageArticle(700, meta)
 }
 
 export function homepage (latest, second, third) {
