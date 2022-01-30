@@ -170,19 +170,39 @@ nav ul > li {
   }  
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+main article:first-of-type{
+  flex-grow: 2;
+  width: 60%;
+}
+
 main article {
   margin-left: 0;
-  width: calc(60% - 0.5rem);
+  width: 30%;
   margin-right: 0.5rem;
   column-count: auto;
   column-gap: 0.5rem;
   column-width: 30ch;
 }
+@media screen and (max-width: 959px) {
+  main article {
+    width: unset;
+  }
+}
 main article h2 {
   margin: 0;
-  white-space: nowrap;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   column-span: all;
   border-bottom: 1px solid var(--color-primary);
+}
+main article:first-of-type h2 {
+  font-size: 2rem;
 }
 main article address {
   margin: 0 2rem;
