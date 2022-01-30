@@ -1,4 +1,5 @@
-import { parse, home } from "../src/page.mjs"
+import { parse } from "../src/page.mjs"
+import { frontPage, headline, homepage} from "../src/layout.mjs"
 import fs from "fs"
 import { exec as _exec } from "child_process"
 import { promisify } from "util"
@@ -10,20 +11,18 @@ const gitFileDates = async (outFile) =>
 
 
 postDates().then(async publishDates => {
-console.log(publishDates)
   const loads = publishDates.map(async ({name, post, dates}, i) => {
+    if (i > 2) { return Promise.resolve() }
     const markdown = await fs.promises.readFile(post, 'utf-8')
-    const limit = i === 0 ? 500 : 200;
+    const layout = i === 0 ? headline : frontPage
     //TODO: use `layout` here to control the result
-    return parse(markdown, { dates, limit })
+    return parse(markdown, { dates, layout })
   }, [])
   // get snippits
   const [latest, second, third, ...others] = await Promise.all(loads)
   // put snippets into index template
-  // TODO: put the different markup results directly into a doc
-  const homepageMarkup = home(latest, second, third)
-  // write html
-  console.log(homepageMarkup)
+  const homepageMarkup = homepage(latest, second, third)  // write html
+  await fs.promises.writeFile('docs/index.html', homepageMarkup)
 })
 
 async function postDates () {

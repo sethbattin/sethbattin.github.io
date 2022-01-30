@@ -1,33 +1,6 @@
 import { promises } from 'fs'
-const { readFile } = promises
 import { marked } from 'marked'
-
-function article ( meta) {
-  const { title, tokens } = meta
-  const content = marked.parser(tokens)
-  return `<html>
-  <head>
-    <title>Seth.how Blog${title && ` | ${title}`}</title>
-    <link type="text/css" rel="stylesheet" href="/main.css" />
-  </head>
-  <body>
-    <article itemscope itemtype="https://schema.org/Article">
-    ${content}
-    <address>
-      By <a href="/seth-battin" itemprop="author" rel="author" itemscope itemtype="https://schema.org/Person">
-        <span itemprop="name">Seth Battin</span>
-      </a>
-    </address>
-    </article>
-  </body>
-</html>`
-}
-
-export function headline ( meta ) {
-  const { tokens } = meta
-  console.log({tokens});
-  return 'blah';
-}
+import { article } from './layout.mjs'
 
 const microdataHeading = (text, level, raw, slugger) => {
   const micro = (level === 1) ? ' itemprop="headline"' : ''
@@ -41,16 +14,17 @@ const defaults = {
   layout: article
 }
 
-export function home(latest, second, third) {
-  return `<webpage>${latest}
-
-  second
-  ${second}
-
-  third
-  ${third}
-  `
+function nowShortDate() {
+  const d = new Date()
+  return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`
 }
+
+const getPublishedTokens = (shortDate) =>
+  marked.lexer(`
+<time datetime="${shortDate}" itemProp="datePublished">
+  ${(new Date(`${shortDate} 23:59:00`)).toDateString()}
+</time>
+`)
 
 // parse markdown and return { markup: string, meta: object}
 export function parse(mdContent, _options = { }) {
@@ -68,16 +42,3 @@ export function parse(mdContent, _options = { }) {
   const markup = options.layout(meta)
   return {markup, meta}
 }
-
-function nowShortDate() {
-  const d = new Date()
-  return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`
-}
-
-const getPublishedTokens = (shortDate) => 
-  marked.lexer(`
-<time datetime="${shortDate}" itemProp="datePublished">
-  ${(new Date(`${shortDate} 23:59:00`)).toDateString()}
-</time>
-`)
-
