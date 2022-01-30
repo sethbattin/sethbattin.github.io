@@ -53,7 +53,7 @@ Epic: show-worthiness
 ---------------------
 
 ### features
-- [ ] index page
+- [x] index page
 - [/] about & contact & other non-articles
 - [ ] footer (disclaimer, cookies)
 - [x] date & author
@@ -78,5 +78,5 @@ long term web stuff
 - [ ] rel="tag" to link to glossary pages
 - [ ] web app manifest ("download this ebook", maybe?)
 - [ ] rel="author" instead of microdata nonsense
-- [ ] font-size 36 or 24 are both not reasonable; headings should be multiples, not the basis
-- [ ] sitemap style sheet a la duluth dish via wordpress plugin, but make it super-weird
+- [x] font-size 36 or 24 are both not reasonable; headings should be multiples, not the basis
+- [ ] sitemap style sheet a la duluth dish via wordpress plugin; use this instead of html sitemap

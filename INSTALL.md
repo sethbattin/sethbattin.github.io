@@ -38,19 +38,17 @@ npm run mark -- -i INSTALL.md
 
 Index Page
 ----------
-Notes to self about how to go about this.
 
-Load the list of files from the public directory (because that's what has
-been published).  
-Process the index from markdown too
-Inject nodes based on the list of pages
-pages need excerpts, for this and for descriptions
-make and style a layout; priorities:
- - simple markup
- - a11y
- - reader mode
+To update the root page with recent article teasers:
 
+```bash
+npm run homepage
+```
 
+Then check in the changes to `docs/index.html`
+
+TODO: figure out how to keep from having to update the [visual-regression]
+snapshots every time this updates.
 
 Publishing
 ----------
@@ -58,6 +56,7 @@ Publishing
 npm run publish post/my-awesome-post.md
 # writes to docs/my-awesome-post/index.html
 ```
+Then check in teh changes in /docs
 
 Previewing
 ----------
@@ -93,9 +92,9 @@ Compare styles before and after css changes:
 npm run vizreg
 ```
 
-Update snapshots to current values:
+Update snapshots to current values (pass the update flag):
 ```bash
-npx playwright test -c playwright/playwright.config.ts -u`
+npm run vizreg -- -u
 ```
 
 For some reason it screws up the font in my WSL shell when i run it.  
