@@ -1,17 +1,20 @@
-import { marked } from 'marked'
+import { marked, Parser, Renderer } from 'marked'
 
 function htmlDoc(headAndBody) {
   return `<!DOCTYPE html>
 <html>${headAndBody}</html>`
 }
 
-export function pubdate(shortDate) {
+function pubdate(shortDate) {
   return `
 <time datetime="${shortDate}" itemProp="datePublished">
   ${(new Date(`${shortDate} 23:59:00`)).toDateString()}
 </time>
 `
 }
+
+const getPublishedTokens = (shortDate) =>
+  marked.lexer(pubdate(shortDate))
 
 function categoriesLink(name, href) {
   return `<a href="${href}" rel="tag">${name}</a>`
@@ -25,14 +28,27 @@ function categoriesLinks(categories) {
   const prev = entries.pop()
   const lastLinks = `${prev ? `${categoriesLink(...prev)} and ` : ''}${categoriesLink(...last)}`
   const restLinks = entries.map(e => categoriesLink(...e)).join(', ')
-  return `<span>This article was published under: ${!!restLinks ? `${restLinks}, ` : ''}${lastLinks}</span>`
+  return `\n<span>This article was published under: ${!!restLinks ? `${restLinks}, ` : ''}${lastLinks}</span>`
 }
 
 
+const microdataHeading = (text, level, raw, slugger) => {
+  const micro = (level === 1) ? ' itemprop="headline"' : ''
+  return `<h${level} id="${slugger.slug(text, { dryrun: true })}"${micro}>${text}</h${level}>
+`
+}
 
 export function article ( meta) {
-  const { title, tokens, categories } = meta
-  const content = marked.parser(tokens)
+  const { title, tokens, categories, publishedDate} = meta
+  const publishedTokens = getPublishedTokens(publishedDate)
+  let headingPos
+  tokens.find(
+    ({type, depth}, i) => (type === 'heading' && depth === 1) ? (headingPos = i, true) : false
+  )
+  tokens.splice(headingPos + 1, 0, ...publishedTokens)
+  const parser = new Parser()
+  parser.renderer.heading = microdataHeading
+  const content = parser.parse(tokens)
   return htmlDoc(`
   <head>
     <title>Seth.how Blog${title && ` | ${title}`}</title>
@@ -45,8 +61,7 @@ export function article ( meta) {
       By <a href="/seth-battin" itemprop="author" rel="author" itemscope itemtype="https://schema.org/Person">
         <span itemprop="name">Seth Battin</span>
       </a>
-    </address>
-    ${categoriesLinks(categories)}
+    </address>${categoriesLinks(categories)}
     </article>
   </body>
 `)
@@ -73,6 +88,28 @@ function homepageArticle (lengthLimit, meta) {
     ${marked.parser(textTokens)}
     <a href="/${name}/">Continue reading - ${category} pg 1</a>
   </article>`
+}
+
+export function tag (meta) {
+  const { title, tokens, path } = meta
+  const content = marked.parser(tokens)
+  //TODO: find parent/child category links
+  const articles = Object.values(tokens.links).map(({title, href}) => 
+    `<a href="${href}">${title}</a>`)
+  return htmlDoc(`
+    <head><title>Seth.How?: ${title} Article List</title></head>
+    <body>
+      ${content}
+      <section>
+        <h2>${title} Articles</h2>
+        <ul>
+        <li>
+        ${articles.join('</li>\n<li>')}
+        </li>
+        </ul>
+      </section>
+    </body>
+  `)
 }
 
 
