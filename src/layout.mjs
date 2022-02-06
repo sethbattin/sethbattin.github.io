@@ -13,8 +13,25 @@ export function pubdate(shortDate) {
 `
 }
 
+function categoriesLink(name, href) {
+  return `<a href="${href}" rel="tag">${name}</a>`
+}
+function categoriesLinks(categories) {
+  const entries = Object.entries(categories)
+  if (!entries.length) {
+    return ''
+  }
+  const last = entries.pop()
+  const prev = entries.pop()
+  const lastLinks = `${prev ? `${categoriesLink(...prev)} and ` : ''}${categoriesLink(...last)}`
+  const restLinks = entries.map(e => categoriesLink(...e)).join(', ')
+  return `<span>This article was published under: ${!!restLinks ? `${restLinks}, ` : ''}${lastLinks}</span>`
+}
+
+
+
 export function article ( meta) {
-  const { title, tokens } = meta
+  const { title, tokens, categories } = meta
   const content = marked.parser(tokens)
   return htmlDoc(`
   <head>
@@ -29,6 +46,7 @@ export function article ( meta) {
         <span itemprop="name">Seth Battin</span>
       </a>
     </address>
+    ${categoriesLinks(categories)}
     </article>
   </body>
 `)

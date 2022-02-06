@@ -56,7 +56,6 @@ export function parse(mdContent, _options = { }) {
   )
   tokens.splice(headingPos + 1, 0, ...publishedTokens)
   const categories = getCategories(tokens)
-  console.log({categories})
   const meta = { ...options, tokens, publishedDate: shortDate, title: heading.text, categories }
   const markup = options.layout(meta)
   return {markup, meta}
