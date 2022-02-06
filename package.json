@@ -14,6 +14,7 @@
     "vizreg-report": "npx serve -p 3001 playwright/html-report",
     "pub": "node $npm_config_xmod scripts/publish.mjs",
     "pub:homepage": "node $npm_config_xmod scripts/homepage.mjs",
+    "pub:tag": "node $npm_config_xmod scripts/tag.mjs",
     "start": "npx serve docs",
     "test": "node $npm_config_xvmmod node_modules/.bin/jest --roots src "
   },

@@ -1,6 +1,8 @@
 import { parse } from "../src/page.mjs"
 import { tag } from "../src/layout.mjs"
 import { addLink } from "../src/tag.mjs"
+import { INDEX, WEBROOT } from "../src/settings.mjs"
+import { publishTag, tagFilePath } from "../src/tag.mjs"
 import assert from "assert"
 import { join, relative, parse as pathparse } from "path"
 import { promises as fs, constants as fsConstants } from "fs"
@@ -11,9 +13,6 @@ const exec = promisify(_exec)
 const [nodeBin, script, fileName] = process.argv
 
 assert(!!fileName, "specify a markdown file to publish")
-
-const INDEX = 'index.html'
-const WEBROOT = 'docs'
 
 const postFile = pathparse(relative('posts', fileName))
 const outFile = join(WEBROOT, postFile.dir.replace('_private', ''), postFile.name, INDEX)
@@ -50,8 +49,6 @@ Promise.all([
   process.exit(1)
 })
 
-const tagFilePath = (name) => join('tags', `${name}.md`)
-
 const updateTagMarkdown = async (name, articleOut, title) => {
   const tagFile = tagFilePath(name)
   const href = articleOut.replace(WEBROOT, '').replace(INDEX, '')
@@ -70,14 +67,4 @@ const updateTagMarkdown = async (name, articleOut, title) => {
   await fs.writeFile(tagFile, newContent, 'utf-8')
 
   return { created, updated, href }
-}
-
-const publishTag = async (name, path, verb) => {
-  const tagFile = tagFilePath(name)
-  const tagContents = await fs.readFile(tagFile, 'utf-8')
-  const { markup, meta } = parse(tagContents, { name, path, layout: tag })
-  const tagOutFile = join(WEBROOT, path, INDEX)
-  await fs.mkdir(join(WEBROOT, path), {recursive: true})
-  await fs.writeFile(tagOutFile, markup, 'utf-8')
-  return {tagOutFile}
 }
