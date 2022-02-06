@@ -24,7 +24,7 @@ TODO
 - [x] css & layout
 - [ ] use tagged releases instead of branch deploys?
 - [ ] spelling, grammer, and readability checker?
-- [ ] add a tagging system
+- [x] add a tagging system
 - [x] create a "showworthy" feature list
 
 
@@ -33,6 +33,7 @@ TODO
 - markdown MVP - start late in 2021...so late it's 2022 as I type this - complete Jan 1 2022 :party:
 - private drafts start ~ Jan 11th - easy but uses submodules; blog about that
 - css & layout start ~ Jan 11th
+- tagging - Weekend of Feb 5th 2022
 
 
 How it works
@@ -75,8 +76,9 @@ Epic: show-worthiness
 
 long term web stuff
 - [ ] pingback on api subdomain [https://www.hixie.ch/specs/pingback/pingback]
-- [ ] rel="tag" to link to glossary pages
+- [x] rel="tag" to link to glossary pages
 - [ ] web app manifest ("download this ebook", maybe?)
 - [ ] rel="author" instead of microdata nonsense
 - [x] font-size 36 or 24 are both not reasonable; headings should be multiples, not the basis
 - [ ] sitemap style sheet a la duluth dish via wordpress plugin; use this instead of html sitemap
+

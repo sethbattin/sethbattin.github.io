@@ -59,6 +59,24 @@ npm run pub post/my-awesome-post.md
 ```
 Then check in the changes in /docs
 
+Categories
+----------
+
+aka tags
+
+A post can be tagged by including a link with href that starts with /tag/.  The links
+will be detected even from unused reference links (bottom of markdown, but not referenced
+in rest of the doc).
+
+When a post with these links is published, the list of categories will be returned as
+part of the parsing metadata.  The publishing script will update the markdown files in
+tags with matching names (flat names), and then publish each changed source file.
+
+This method is an except to the rule about not saving auxilliary meta data about 
+published content, because the alternative would be to scan every published source file
+whenever any tag is published.  Or reverse-parse html, which isn't part of marked.js's
+featureset.
+
 Previewing
 ----------
 Serve the static content locally via the npm module `serve`:
