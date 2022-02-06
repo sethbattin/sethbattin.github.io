@@ -42,7 +42,7 @@ Index Page
 To update the root page with recent article teasers:
 
 ```bash
-npm run homepage
+npm run pub:homepage
 ```
 
 Then check in the changes to `docs/index.html`
@@ -53,10 +53,11 @@ snapshots every time this updates.
 Publishing
 ----------
 ```bash
-npm run publish post/my-awesome-post.md
+npm run pub post/my-awesome-post.md
 # writes to docs/my-awesome-post/index.html
+# also write to tags/*.md and docs/tag/**/index.html for category links starting with /tag
 ```
-Then check in teh changes in /docs
+Then check in the changes in /docs
 
 Previewing
 ----------
