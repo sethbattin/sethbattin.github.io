@@ -62,7 +62,7 @@ writing HTML without a bunch of wacky javascript nonsense.
 
 For similar reasons as to why [I don't want javascript on this blog][js-free], 
 I also don't want to use css builders.  It feels like the kind of project 
-overhead that I don't want to take on.  But I have to admin that writing all 
+overhead that I don't want to take on.  But I have to admit that writing all 
 the width breakpoints by hand kind of sucks.  The only repreive came from the
 fact that the markup is so simple there just aren't that many things to style.
 
