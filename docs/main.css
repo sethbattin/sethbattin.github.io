@@ -4,6 +4,7 @@
 :root {
   --color-primary: #090909;
   --color-bg: white;
+  --color-halftone: #aaa;
   --font-size-base: 16px;
 }
 @media screen and (min-width: 1280px) {
@@ -241,6 +242,37 @@ article time {
 article > address {
   text-align: right;
   margin: 3rem 0;
+}
+
+article > blockquote:first-of-type {
+  font-style: oblique;
+  text-align: justify;
+  line-height: 2rem;
+  margin: 0 0 0 auto;
+  padding-left: 3rem;
+  border-left: 3px solid var(--color-halftone);
+  font-family: sans-serif;
+}
+
+article > aside {
+  width: 45%;
+  float: right;
+  padding: 0 0.875rem;
+  font-style: italic;
+  margin: 0.875rem;
+  border: 1px solid var(--color-halftone);
+  font-size: 0.875rem;
+}
+article > aside.big {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+article > aside > blockquote {
+  margin-left: 0;
+  margin-right: 0.875rem;
+  padding-left: 0.875rem;
+  border-left: 3px solid var(--color-halftone);
 }
 
 /* width and breakpoints

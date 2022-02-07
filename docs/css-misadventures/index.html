@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seth.how Blog | Under Construction 2: Visual Design</title>
+    <link type="text/css" rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <article itemscope itemtype="https://schema.org/Article">
+    <h1 id="under-construction-2-visual-design" itemprop="headline">Under Construction 2: Visual Design</h1>
+<time datetime="2022-2-6" itemProp="datePublished">
+  Sun Feb 06 2022
+</time>
+<p>Alternate title: from-scratch CSS misadventures in emulating print media; how I
+learned to stop worrying and love css columns and flex-box.</p>
+<blockquote>
+<p>Creating an appealing look and feel for a public blog is <a href="https://dwarffortresswiki.org/index.php/DF2014:Losing" title="Losing is Fun - Dwarf Fortress wiki">Fun</a>.  Everything 
+that can go wrong does for a non-expert like me.  This is the 2nd entry in a
+3-part series about building a website from scratch. The unpublished but
+ostensibly first entry in this series is <a href="/blogging-with/markdown/" title="Blogging with markdown">here: Blogging with Markdown</a>.</p>
+</blockquote>
+<p>After <a href="/under-construction-3/" title="blog under construction part 3 - what audience and why bespoke">being personally attacked</a> about building a blog instead of writing
+content for it, I further <del>was dog-piled</del> felt seen by folks noting that it was
+equally likely we&#39;d waste our time in style-sheets instead of making the platform.
+So, so true.</p>
+<p>But now being on the other side of that process, I&#39;m happy to have spent the 
+effort.  I like the look and am excited to refine it further.  This article 
+will introduce additional items that I need to style, and I&#39;m genuinely looking
+forward to it.  Among those new features: the 3rd article on the home page (the
+intended maximum number), block-quote-based large text blurbs, aside elements, 
+and various inter-linking exercises like categories and prev/next relation links.<br>Huzzah!</p>
+<h2 id="motif">Motif</h2>
+<p>I went with a newspaper look.  Early reviews suggest that the attempt was at 
+least partially successful.  I broke from web-typical and did not make line 
+space between paragraphs.  Instead I added first-line indentation.  That coupled
+nicely with a long-time fascination of mine: emulating <a href="https://en.wikipedia.org/wiki/Illuminated_manuscript" title="Illuminated manuscripts - Wikipedia">illumination</a>.  I know
+I have attempted it in the past and failed, so I was surprised at the easy 
+solution in modern css using first-letter pseudo selection.</p>
+<aside>
+
+<p>I know illuminated manuscripts don&#39;t have a direct lineage to modern multi-media,
+but I can&#39;t help but notice how similar they are.  The simple act of jazzing up
+some writing with a little artistry...that&#39;s what websites are all about, right?
+That it&#39;s no longer the sole domain of cloistered practitioners is wonderful.</p>
+</aside>
+
+<p>But the absolute best part: <strong>COLUMNS!</strong>.  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/columns" title="CSS columns - MDN Web Docs">Css-based columns</a> are
+a thing, and they are amazing.  They look exactly like the theme, and they&#39;re 
+surprisingly simple to control.  Elements that need to go across columns can 
+do so with <code>column-span</code>.  The gap is controllable with <code>column-gap</code>.  If we 
+set <code>column-count: auto</code>, we can control the width by specifying sizes in 
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length" title="CSS length - MDN Web Docs"><code>ch</code> css units</a>, so a column never has too many or too few words.<br>If we combine all this with flex-box to control the overall height of the 
+content, we can absolutely nail the newspaper look.</p>
+<p>Is the look any good?  Who knows.  It was easy for me to imagine, and I like it.</p>
+<h2 id="readability-amp-responsiveness">Readability &amp; Responsiveness</h2>
+<p>Responsive design is super-hard.  Part of the reason I want to make a blog with
+simple markup is so that it can be read in a variety of conditions.  But basic
+support of multiple device sizes is somehow a much bigger difficulty that just
+writing HTML without a bunch of wacky javascript nonsense.</p>
+<p>For similar reasons as to why <a href="/javascript-free-in-2023/" title="Javascript-free in 2023">I don&#39;t want javascript on this blog</a>, 
+I also don&#39;t want to use css builders.  It feels like the kind of project 
+overhead that I don&#39;t want to take on.  But I have to admin that writing all 
+the width breakpoints by hand kind of sucks.  The only repreive came from the
+fact that the markup is so simple there just aren&#39;t that many things to style.</p>
+<aside class="big">
+
+<p>Did you know that css itself can be an <a href="/tag/science/programming/accessibility/" title="Accessibility">tag-a11y</a> concern?  Specifically if you
+override the normal look of interactions, it can throw off users who are not 
+comfortable with operating a website.  I sure didn&#39;t know that until I looked up
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::selection#accessibility_concerns" title="CSS ::selection pseudo element accessibility concerns - MDN Web Docs">how to make text selection black and white</a>.</p>
+<blockquote>
+<p><em>Don&#39;t override selected text styles for purely aesthetic reasons</em> — users 
+can customize them to suit their needs. For people experiencing cognitive 
+concerns or who are less technologically literate, unexpected changes to 
+selection styles may hurt their understanding of the functionality.</p>
+</blockquote>
+<p>Yeah I guess I&#39;ll leave it alone.  But given the undetrimental choice, I would
+like it to match my dull color scheme.</p>
+</aside>
+
+<h2 id="hamburger-hold-the-javascript">Hamburger, hold the javascript</h2>
+<p>If I&#39;m aiming for simple and accessible, then I can&#39;t do the sadly typical thing
+for mobile websites and display completely different markup in one scenario 
+versus another.  One place where that happens frequently is the site menu.  It
+collapses into a top-edge little icon that expands to show a list of links.  The
+desktop menu is relatively obvious or simple, but completely disimilar.</p>
+<p>Is it possible to use one set of markup but achieve the effect anyway?  And avoid
+special rendering via javascript?</p>
+<p>Yes it is possible!  The amazing <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" title="Details Element - MDN Web Docs"><code>&lt;details&gt;</code> element</a> shows 
+and hides with no js whatsoever.  (Well...almost zero.)  More detail about that
+will come in what I intend to be my first really deep-diving technical article&#39;s 
+subject.  I think I could make re-usable library and a minor splash republishing
+on one of the technical public blogs.</p>
+<p>Suffice to say: my css here was quite clunky, but I was able to make it happen.
+It was curiously difficult to find the three-lines icon without loading some
+goofy font-based library or whatever.  But the attempt sent me a long, enjoyable
+goose chase involving <a href="https://en.wikipedia.org/wiki/Box-drawing_character" title="Box-drawing characters - Wikipedia">various unicode and ascii art</a>.</p>
+<h2 id="this-was-supposed-to-be-a-failblog">This was supposed to be a failblog</h2>
+<p>I assure you, the css was a major struggle.  I published an article first, then 
+the home page, so all my styles were basically broken when I ported the content
+over.  And then I had to retroactively add specificity, which sucks.  And the
+breakpoints were pretty horrible to deal with.  I loosely knew I <em>should</em> use
+rem units for text, but I didn&#39;t really understand why, and I foolishly set the 
+base size for headings instead of readable plain text.  Big :facepalm: on that.  </p>
+<p>Overall, I spent hours and hours and hours, and I did not produce very much.</p>
+<p>But in spite of all that, in retrospect it just wasn&#39;t that bad.  I got it where 
+I wanted it to be.  There&#39;s some kind of personal lesson here about not expecting 
+failure, maybe.  I definitely believe in the edict of not depicting a technical 
+task as impossible to do well, because I think it sets a bad tone.  Someone who 
+believes something will suck no matter what will not even attempt to do a good 
+job.  And some folks avoid tasks entirely if they aren&#39;t guaranteed to be 100% 
+successful. That&#39;s no good; struggle is valuable.  Even if i had learned nothing,
+I would still feel proud of having built something that I wasn&#39;t certain I could.</p>
+<p>For my CSS, I put my head down and got through it.  And that worked.  This isn&#39;t 
+some blasé neurotypical motivational speech, by the way.  I know how useless 
+that is; I perpetually struggle to accomplish simple tasks, even when i have a 
+full understanding and skill set required for it.  I am simply marveling at the 
+fact that even though it took me far longer that I might have guessed (adult-adhd
+symptom two for a single paragraph), I worked on it, and now I get to be happy
+with the results.  That&#39;s pretty cool, in my opinion.</p>
+<p>Though I guess I did apply one productivity hack for non-visual software engineers 
+like me: <a href="https://en.wikipedia.org/wiki/Test-driven_development" title="Test-driven development - Wikipedia">TDD</a>.</p>
+<h2 id="tools-for-techies">Tools for Techies</h2>
+<p>Having realized a mistake with rem units, I resolved to fix that.  But I had 
+already sunk so many hours into making that article look <em>just so</em> that I didn&#39;t 
+want to think about the manual effort of revising it.</p>
+<p>Plus...you just can&#39;t.  No one can.  A person cannot retain a mental image of 
+a rendered web page and reconstruct it one line of css at a time.  I doubt even 
+a css master could do that, even in one smooth movement of typing without 
+mistakes or wiping.  A human design implementer needs a way to remember what a
+page looked like before futzing with the base size, and then refer back to that 
+frequently.  They need some kind of snapshot or...<em>regression test</em>.  <strong>OMG.</strong></p>
+<p>It was a real eureka moment, when I realized that I needed visual regression.
+I am a very, very longtime proponent of the concept.  I have advocated it at 
+my last three professional engagements and wrote a short white-paper about how
+simple it <em>should</em> be to accomplish.  I have endured constant naysayers telling
+me how it can&#39;t be done, up to and including the day I literally built one 
+during a two-day hackathon.  I won the tech award for that.</p>
+<aside>
+
+<p>The white-paper lists a simple recipe for visual regression testing:</p>
+<ol>
+<li>the ability to generate deterministic screenshots</li>
+<li>A test-running system extensible enough to compare current screenshots to references</li>
+<li>A report format that allows quick diagnosis of visual errors</li>
+</ol>
+<p>Read more here: <a href="/visual-regression-design/" title="Design pattern for a visual regression testing system">vizreg-recipe</a></p>
+</aside>
+
+<p>And yet I&#39;ve never productionized one.  Well...today was the day.  If it&#39;s so
+simple and easy, then let&#39;s prove it.  Maybe a simple web API, e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API/Using_Screen_Capture" title="ScreenCapture API - MDN Web Docs">ScreenCapture</a>?
+Nah, that turned out to be not really accessible from a CLI without a ton of 
+work; not the right idea.  </p>
+<p>I altavista&#39;ed for browser automation and first found <a href="https://developers.google.com/web/tools/puppeteer/get-started" title="Puppeteer quick start">puppeteer</a>.  I know the 
+name, and we use it at my workplace.  And it sucks.  After installing multiple 
+system libraries it still didn&#39;t run.  This may have been the fault of me using 
+outdated WSL as a dev environment, but IMO that&#39;s still something of a deal-breaker.</p>
+<p>Then I reminded myself of an plucky project from a young upstart company called 
+MicroSoft: <a href="https://playwright.dev/docs/test-snapshots" title="Playwright testing, visual comparisons">playwright</a>.  It offered wonderful qualities: demo usage that made
+screenshots, another use case that hilariously does verbatim what puppeteer
+tried and failed to do, and further into the docs...le pièce de résistance...</p>
+<p>It will not only create screenshots, those screenshots can be passed directly 
+to a snapshot-style assertion, and that assertion reports itself into an HTML
+document, and that document <em>shows the difference</em>.  It&#39;s exactly what I had
+been pining for over nearly a decade.  And it was relatively easy in a nice 
+package.  My recipe was outdated before I had ever used it.</p>
+<p>Of course I committed bike-shedding in the first degree on using this tool as
+well, but I am only a mortal web engineer.  I added miles and miles of special
+config setup so I could test my rem units.  But at the end: it automatically 
+runs at all my responsive design breakpoints!</p>
+<h2 id="big-gulps-huh">Big gulps, huh?</h2>
+<p>I&#39;m not sure how to wrap this one up.  I can say that I&#39;m feeling pretty decent
+between the discovery of a simple visual regression testing solution and my 
+lingering sense of accomplishment.  If you&#39;d like to comment on my web styling
+chops, send me a note.  Maybe that contact info will exist on the blog by the
+time you read this.</p>
+<p>:peace:</p>
+
+    <address>
+      By <a href="/seth-battin" itemprop="author" rel="author" itemscope itemtype="https://schema.org/Person">
+        <span itemprop="name">Seth Battin</span>
+      </a>
+    </address>
+<span>This article was published under: <a href="/tag/programming/science/accessibility/" rel="tag">accessibility</a>, <a href="/tag/science/programming/" rel="tag">programming</a> and <a href="/tag/science/" rel="tag">science</a></span>
+    </article>
+  </body>
+</html>

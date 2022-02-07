@@ -6,9 +6,8 @@ learned to stop worrying and love css columns and flex-box.
 
 > Creating an appealing look and feel for a public blog is [Fun].  Everything 
 > that can go wrong does for a non-expert like me.  This is the 2nd entry in a
-> 3-part series about building a website from scratch.  
-
-The unpublished but ostensibly first entry in this series is [here: Blogging with Markdown][prev].
+> 3-part series about building a website from scratch. The unpublished but
+> ostensibly first entry in this series is [here: Blogging with Markdown][prev].
 
 After [being personally attacked][next] about building a blog instead of writing
 content for it, I further ~was dog-piled~ felt seen by folks noting that it was
@@ -16,7 +15,7 @@ equally likely we'd waste our time in style-sheets instead of making the platfor
 So, so true.
 
 But now being on the other side of that process, I'm happy to have spent the 
-effort.  I like the look and I am excited to refine it further.  This article 
+effort.  I like the look and am excited to refine it further.  This article 
 will introduce additional items that I need to style, and I'm genuinely looking
 forward to it.  Among those new features: the 3rd article on the home page (the
 intended maximum number), block-quote-based large text blurbs, aside elements, 
@@ -34,10 +33,12 @@ I have attempted it in the past and failed, so I was surprised at the easy
 solution in modern css using first-letter pseudo selection.
 
 <aside>
+
 I know illuminated manuscripts don't have a direct lineage to modern multi-media,
 but I can't help but notice how similar they are.  The simple act of jazzing up
 some writing with a little artistry...that's what websites are all about, right?
 That it's no longer the sole domain of cloistered practitioners is wonderful.
+
 </aside>
 
 But the absolute best part: **COLUMNS!**.  [Css-based columns][css-columns] are
@@ -65,7 +66,8 @@ overhead that I don't want to take on.  But I have to admin that writing all
 the width breakpoints by hand kind of sucks.  The only repreive came from the
 fact that the markup is so simple there just aren't that many things to style.
 
-<aside>
+<aside class="big">
+
 Did you know that css itself can be an [tag-a11y] concern?  Specifically if you
 override the normal look of interactions, it can throw off users who are not 
 comfortable with operating a website.  I sure didn't know that until I looked up
@@ -78,6 +80,7 @@ comfortable with operating a website.  I sure didn't know that until I looked up
 
 Yeah I guess I'll leave it alone.  But given the undetrimental choice, I would
 like it to match my dull color scheme.
+
 </aside>
 
 Hamburger, hold the javascript
@@ -157,11 +160,15 @@ me how it can't be done, up to and including the day I literally built one
 during a two-day hackathon.  I won the tech award for that.
 
 <aside>
+
 The white-paper lists a simple recipe for visual regression testing:
+
 1. the ability to generate deterministic screenshots
 2. A test-running system extensible enough to compare current screenshots to references
 3. A report format that allows quick diagnosis of visual errors
+
 Read more here: [vizreg-recipe]
+
 </aside>
 
 And yet I've never productionized one.  Well...today was the day.  If it's so
