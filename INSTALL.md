@@ -137,5 +137,15 @@ Images
 consider using [compressor.js].
 
 
+XML sitemap and rss
+-------------------
+How to XML (ideation phase):
+- Update the sitemap.xml file at same time as publishing and updating the homepage.
+- Instead of also building an html "archive" style page, build a XSL to make it look nice-ish, e.g. http://duluthdish.com/sitemap.xml
+- treat that as the meta-content source of truth for other things, e.g. rss XML (YAY NO META design goal)
+- use https://github.com/nfarina/xmldoc for that parsing (simple API; single dependency)
+- STRETCH: js in the XLST's html content; test whether this is possible
+
+
 [marked]: https://marked.js.org/ "Marked - markdown processor for javascript"
 [compressor.js]: https://fengyuanchen.github.io/compressorjs/ "compressor.js - javascript image compressor"

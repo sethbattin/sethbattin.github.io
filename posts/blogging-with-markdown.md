@@ -1,4 +1,6 @@
-# BLogging with markdown
+# Blogging with markdown
+> Alternate title: javascript free in 2023
+
 It should be easier than this.  Dare I say that was the whole point.
 
 I will contradict myself almost immediately.  When computers are simple to use, it means someone somewhere spent time making all the complexity invisible.  Usually many, many people over a very long time.  I wanted a system for blogging that was easy to use, but I had not yet invested the effort to make it so.  If you are reading this, I will assume I was eventually successful.  At the time of writing I only have failures to report.
@@ -19,6 +21,7 @@ Goal 0: I want to make a system where I can write markdown and produce html.
 Goal 2: I want that html to be very simple, accessible, and functional
 Goal 3: I want to avoid creating special-case markdown to accomplish html nuances
 Goal 4: I want to build a featureful blogging platform within the above contraints.
+Goal 5: I want to avoid storing metadata; markdown input, web-root output only.
 
 ### Technical methodologies:
 Categories:
@@ -30,7 +33,8 @@ Excerpt:
  - profit
 publish date
  - use git log dates
-
+indexing
+ - use the sitemap/rss xml for storing metadata
 
 ----
 shorthand notes:
@@ -48,6 +52,7 @@ please no meta-data
  - story of techhub
  - turns out it's common for jeckle too
  - can't i just let the files store the article?
+ - ffffff i'm tempted to put meta on the output side too; should be able to use SEO/RSS stuff instead
 todo:
  - mdx external
  - next-mdx-remote example might do exactly that
