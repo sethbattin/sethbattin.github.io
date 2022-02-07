@@ -184,12 +184,17 @@ main article:first-of-type{
 
 main article {
   margin-left: 0;
-  width: 30%;
+  width: 35%;
   margin-right: 0.5rem;
   column-count: auto;
   column-gap: 0.5rem;
   column-width: 30ch;
 }
+
+main article:nth-of-type(3) {
+  width: auto;
+}
+
 @media screen and (max-width: 959px) {
   main article {
     width: unset;
@@ -206,7 +211,8 @@ main article:first-of-type h2 {
   font-size: 2rem;
 }
 main article address {
-  margin: 0 2rem;
+  margin: 0;
+  margin-left: 1rem;
   display: inline-block;
 }
 main article time {
@@ -244,7 +250,7 @@ article > address {
   margin: 3rem 0;
 }
 
-article > blockquote:first-of-type {
+article > blockquote:first-of-type:not(.twitter-tweet) {
   font-style: oblique;
   text-align: justify;
   line-height: 2rem;

@@ -135,7 +135,7 @@ export function homepage (latest, second, third) {
     <!-- get rid of this styling div; it sucks; use flexbox for direct child elements -->
     <div class="ticker d-f f-ai-e f-jc-sb">
       <p>The most available domain for almost regular updates.</p>
-      <time datetime="2023-01-13">Thursday, January 13th 2022</time>
+      ${pubdate(latest.meta.publishedDate)}
     </div>
     </header>
     <nav>
