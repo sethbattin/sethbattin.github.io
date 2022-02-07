@@ -206,7 +206,9 @@ lingering sense of accomplishment.  If you'd like to comment on my web styling
 chops, send me a note.  Maybe that contact info will exist on the blog by the
 time you read this.
 
-:peace:
+<a href="./ice_art_full.jpg">
+<img src="./ice_art.jpg" alt="a tower built from dyed ice blocks" title="I definitely _have_ style; having does not denote calibur." width=250 height=350 />
+</a>
 
 
 [Fun]: https://dwarffortresswiki.org/index.php/DF2014:Losing "Losing is Fun - Dwarf Fortress wiki"
