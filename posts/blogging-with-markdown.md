@@ -1,7 +1,8 @@
+<<<<<<< Updated upstream
 # Blogging with markdown
-> Alternate title: javascript free in 2023
-
-It should be easier than this.  Dare I say that was the whole point.
+> Alternate title: javascript free in 2023.  It should be easier than this.
+> Dare I say that was the whole point; to be able to write with zero friction, 
+> and for that writing to be easily converted to publishable html.
 
 I will contradict myself almost immediately.  When computers are simple to use, it means someone somewhere spent time making all the complexity invisible.  Usually many, many people over a very long time.  I wanted a system for blogging that was easy to use, but I had not yet invested the effort to make it so.  If you are reading this, I will assume I was eventually successful.  At the time of writing I only have failures to report.
 
@@ -14,7 +15,7 @@ The real learning is in knowing what to avoid.  I hope to list here a long set o
 ## The choices made for us
 
 I started with the ideas I _should_ have understood well.
-
+:
 ## design philosophy
 
 Goal 0: I want to make a system where I can write markdown and produce html.
@@ -63,3 +64,4 @@ todo:
 
 [rel=tag]: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#attr-tag "MDN: HTML attributes"
 [unused]: https://google.com "an unused link to test marked.js"
+[programming]: /tag/science/programming/ "Tagged as Programming under science"
