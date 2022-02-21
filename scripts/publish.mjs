@@ -44,14 +44,27 @@ Promise.all([
       `no change to tags/${tag.catName}.md`
     )
   })
+  const rss = await addRss(outFile, meta)
 }).catch(e => {
   console.error(e);
   process.exit(1)
 })
 
+const articleHref = articleOut => articleOut.replace(WEBROOT, '').replace(INDEX, '')
+
+import xmldoc from "xmldoc"
+const addRss = async (articleOut, meta) => {
+  const href = articleHref(articleOut)
+  const currentRss = await fs.readFile(join(WEBROOT, 'rss.xml'), 'utf-8').then(t => t.replace(/ *\n */g, ''))
+  const doc = new xmldoc.XmlDocument(currentRss)
+  const docString = '<?xml version="1.0"?>' + doc.toString({compressed: true})
+  console.log({href, currentRss, doc, docString})
+  assert(currentRss === docString, 'oh no mismatch')
+}
+
 const updateTagMarkdown = async (name, articleOut, title) => {
   const tagFile = tagFilePath(name)
-  const href = articleOut.replace(WEBROOT, '').replace(INDEX, '')
+  const href = articleHref(articleOut)
   let tagFileContent = ''
   let created = false
   try {

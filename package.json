@@ -35,7 +35,8 @@
   },
   "homepage": "https://github.com/sethbattin/sethbattin.github.io#readme",
   "dependencies": {
-    "marked": "^4.0.10"
+    "marked": "^4.0.10",
+    "xmldoc": "^1.1.2"
   },
   "devDependencies": {
     "@playwright/test": "^1.17.2",

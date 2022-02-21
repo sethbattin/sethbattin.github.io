@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Seth.How Blog</title>
+    <link>//blog.seth.how/</link>
+    <description>Blogs from Seth</description>
+    <language>en-us</language>
+    <pubDate>Sat, 19 Feb 2022 03:04:05 GMT</pubDate>
+    <lastBuildDate>Sat, 19 Feb 2022 03:04:05 GMT</lastBuildDate>
+    <generator>https://www.npmjs.com/package/xmldoc and https://github.com/sethbattin/sethbattin.github.io</generator>
+    <copyright>The automatic legal kind from originality and fixation, The Year of Our Lord 2022</copyright>
+    <managingEditor>me@seth.how</managingEditor>
+    <item>
+      <title>Example Template</title>
+      <link>//blog.seth.how/example-template/</link>
+      <pubDate>Fri, 18 Feb 2022 06:07:08 GMT</pubDate>
+      <guid>//blog.seth.how/example-template/</guid>
+      <category domain="//blog.seth.how/tag/science/">Science</category>
+    </item>
+  </channel>
+</rss>
