@@ -79,8 +79,7 @@ function homepageArticle (lengthLimit, meta) {
     lengthTotal += t.text.length
     return under
   })
-  //TODO: tags
-  const category = 'Variety'
+  const category = Object.keys(meta.categories).length ? Object.keys(meta.categories).pop() : 'Variety'
   return `<article>
     <h2>${title}</h2>
     ${pubdate(publishedDate)}
