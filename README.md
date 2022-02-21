@@ -53,6 +53,9 @@ thing that i type needs to be published.
 Epic: show-worthiness
 ---------------------
 
+### bugs
+- [ ] tags produced in the wrong order (css-misadventures)
+
 ### features
 - [x] index page
 - [/] about & contact & other non-articles
@@ -74,11 +77,13 @@ Epic: show-worthiness
 - [ ] spellcheck - use hunspell and also blog about it
 
 
-long term web stuff
+### long term web stuff
 - [ ] pingback on api subdomain [https://www.hixie.ch/specs/pingback/pingback]
 - [x] rel="tag" to link to glossary pages
 - [ ] web app manifest ("download this ebook", maybe?)
 - [ ] rel="author" instead of microdata nonsense
 - [x] font-size 36 or 24 are both not reasonable; headings should be multiples, not the basis
 - [ ] sitemap style sheet a la duluth dish via wordpress plugin; use this instead of html sitemap
+
+### rss
 
