@@ -25,6 +25,9 @@ Goal 4: I want to build a featureful blogging platform within the above contrain
 Goal 5: I want to avoid storing metadata; markdown input, web-root output only.
 
 ### Technical methodologies:
+Headings:
+ - some markdown-publishing systems skip H1s in the files, e.g. github wikis
+ - I want the filename to be the url, but the title to be document content
 Categories:
  - use the html attribute [rel=tag] for categories based on the path convention `/tag/*`
  - implement a markedjs handler for links to inject the `rel` attribute for this path
