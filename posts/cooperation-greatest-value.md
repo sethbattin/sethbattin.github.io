@@ -23,7 +23,9 @@ of English has an idiom for that.
 Worth its weight in gold
 ------------------------
 
-[<img src="./antique-fire-extinguisher.jpg" width=300 style="float: left; margin: 1rem;" />][img-fire-extinguisher]This
+[<img alt="antique fire extinguisher" 
+src="/cooperation-greatest-value/antique-fire-extinguisher.jpg"
+width=300 class="inline" />][img-fire-extinguisher]This
 is an antique fire extinguisher.  I was fortunate enough to encounter it
 in my daily life, recognize it for what it was, and be granted it as a gift 
 from its rightful owner.  I informed them to the best of my ability what it was
