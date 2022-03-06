@@ -86,7 +86,7 @@ Even if I can distill only half of that, it will still be the most valuable
 single item in my entire house that isn't an electric car.  It'll make a fine
 inaugural trophy for the adult hobby chemistry set I intend to assemble.  I'll
 probably practice distilling something safer first, and I want to make a
-Breaking Bad coffee apparatus (even though [apparently that's a commodity][siphon-coffee-maker]).
+Breaking Bad coffee apparatus (even though [apparently that's a commodity][syphon-coffee-maker]).
 But after that...I'm definitely distilling this hepatoxin and putting it into
 a nice case.
 
