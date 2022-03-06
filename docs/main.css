@@ -224,7 +224,7 @@ main article p {
 }
 article p img {
   width: 300px;
-  max-width: 80%;
+  max-width: 50%;
   float: left;
   margin: 1rem;
 }
