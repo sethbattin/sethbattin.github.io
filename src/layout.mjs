@@ -17,7 +17,7 @@ const getPublishedTokens = (shortDate) =>
   marked.lexer(pubdate(shortDate))
 
 function categoriesLink(name, href) {
-  return `<a href="${href}" rel="tag">${name}</a>`
+  return `<a href="${href.toLowerCase()}" rel="tag">${name}</a>`
 }
 function categoriesLinks(categories) {
   const entries = Object.entries(categories)

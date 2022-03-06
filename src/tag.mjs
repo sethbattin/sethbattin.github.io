@@ -5,7 +5,7 @@ import { parse } from "../src/page.mjs"
 import { tag } from "../src/layout.mjs"
 import { INDEX, WEBROOT } from "../src/settings.mjs"
 
-export const tagFilePath = (name) => join('tags', `${name}.md`)
+export const tagFilePath = (name) => join('tags', `${name.toLowerCase()}.md`)
 
 export function addLink(mdContent, link) {
   const tokens = marked.lexer(mdContent)
