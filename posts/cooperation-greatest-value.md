@@ -248,7 +248,7 @@ teammates and get onto team save-the-world.
 [the greatest value]: /tag/opinion/the-greatest-value "The greatest value(s)"
 [tag-society]: /tag/society "We write blogs about society, and yet we live in one.  a.k.a. politics"
 [tag-chemistry]: /tag/science/chemistry "Chemistry, the most quantum of sciences"
-[img-fire-extinguisher]: ./antique-fire-extinguisher.jpg "Pyrene fire extinguisher, 1950s, containing carbon tetrachloride"
+[img-fire-extinguisher]: /cooperation-greatest-value/antique-fire-extinguisher.jpg "Pyrene fire extinguisher, 1950s, containing carbon tetrachloride"
 [x-and-f-carbon-tet]: https://www.youtube.com/watch?v=piN0fDkivG0 "YouTube: Extractions & Ire, Illegal Chemical from a vintage 1960s Extinguisher"
 [syphon-coffee-maker]: https://www.google.com/search?q=syphon+coffee+maker "Google search: syphon coffee maker (there are lots of options)"
 [the-bs-generation]: /the-bullshit-generation "The B.S. Generation"
