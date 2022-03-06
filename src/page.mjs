@@ -20,8 +20,12 @@ const getCategories = (tokens) =>
     const list = (link.href.indexOf('/tag/') !== 0) ? [] :
       link.href.split('/').filter(s => !!s && s !== 'tag')
     const links = list.reduce((acc2, l) => {
+      const segments = l.split('-').reduce((acc3, sg) => {
+        const caps = sg.charAt(0).toUpperCase() + sg.slice(1)
+        return acc3 ? `${acc3}-${caps}` : caps
+      }, '')
       return {
-        [l]: `/tag/${[...Object.keys(acc2), l].join('/')}/`,
+        [segments]: `/tag/${[...Object.keys(acc2), l].join('/')}/`,
         ...acc2,
       }
     }, {})
@@ -35,7 +39,7 @@ const getCategories = (tokens) =>
 // parse markdown and return { markup: string, meta: object}
 export function parse(mdContent, _options = { }) {
   const options = Object.assign({}, defaults, _options)
-  const tokens = marked.lexer(mdContent)
+  const tokens = marked.lexer(mdContent, {gfm: true})
   const dates = options.dates || []
   const publishedDate = dates[0] || nowShortDate()
   const { text: title } = tokens.find(
