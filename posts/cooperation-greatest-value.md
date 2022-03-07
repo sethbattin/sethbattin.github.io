@@ -250,6 +250,6 @@ teammates and get onto team save-the-world.
 [tag-chemistry]: /tag/science/chemistry "Chemistry, the most quantum of sciences"
 [img-fire-extinguisher]: /cooperation-greatest-value/antique-fire-extinguisher.jpg "Pyrene fire extinguisher, 1950s, containing carbon tetrachloride"
 [x-and-f-carbon-tet]: https://www.youtube.com/watch?v=piN0fDkivG0 "YouTube: Extractions & Ire, Illegal Chemical from a vintage 1960s Extinguisher"
-[siphon-coffee-maker]: https://www.google.com/search?q=iyphon+coffee+maker "Google search: siphon coffee maker (there are lots of options)"
+[siphon-coffee-maker]: https://www.google.com/search?q=siphon+coffee+maker "Google search: siphon coffee maker (there are lots of options)"
 [the-bs-generation]: /the-bullshit-generation "The B.S. Generation"
 [montreal-protocol]: https://www.unep.org/ozonaction/who-we-are/about-montreal-protocol "The Montreal Protocol - environment agreement on ozone-depleting substances"
