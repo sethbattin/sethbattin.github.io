@@ -62,7 +62,7 @@ const addRss = async (articleOut, meta) => {
   const childStrings = doc.firstChild.children.map(c => c.name).join('\n')
 
   const { title, publishedDate, categories } = meta
-  const link = `//blog.seth.how${href}`
+  const link = `https://blog.seth.how${href}`
   const lastBuildDate = (new Date()).toGMTString()
   const [category, categoryLink] = Object.entries(categories).shift() || []
 
