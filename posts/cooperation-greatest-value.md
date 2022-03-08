@@ -158,7 +158,7 @@ I think leadership is a matter of informed-consent persuasion that my ideas are
 the best ideas.  When I'm wrong, I expect people to be allowed to tell me.  God
 I hope they would, anyway.  I'm not guaranteed to succeed at persuading, and
 some folks will always operate in bad faith to block me even when I'm doing it
-the best I can.  But I am not willing to fight fight with fire when it comes to
+the best I can.  But I am not willing to fight fire with fire when it comes to
 dishonest folks who refuse to listen to others.
 
 When it comes to teammates though, I do have a baseline expectation.  And it's
@@ -236,10 +236,10 @@ companies 30 years earlier.  That was high-school debate.  I'd much rather just
 pick a value and advocate for it.
 
 By the way we were reading sources from 1992 that said there wasn't clear
-evidence about global warming yeah.  It was a lie, of course, again this is
+evidence about global warming yet.  It was a lie, of course; again this is
 disinformation technique was invented by the tobacco industry.  But that debate
 tactic worked pretty well; maybe we just need to sit and wait for a few (tens
-of ) years. Well here we are three decades later, and we still haven't gathered
+of) years. Well here we are three decades later, and we still haven't gathered
 enough evidence for these bad-faith non-cooperators.  We never will convince
 them, because they don't want to be convinced.  It's time to fire those bad
 teammates and get onto team save-the-world.
@@ -250,6 +250,6 @@ teammates and get onto team save-the-world.
 [tag-chemistry]: /tag/science/chemistry "Chemistry, the most quantum of sciences"
 [img-fire-extinguisher]: /cooperation-greatest-value/antique-fire-extinguisher.jpg "Pyrene fire extinguisher, 1950s, containing carbon tetrachloride"
 [x-and-f-carbon-tet]: https://www.youtube.com/watch?v=piN0fDkivG0 "YouTube: Extractions & Ire, Illegal Chemical from a vintage 1960s Extinguisher"
-[syphon-coffee-maker]: https://www.google.com/search?q=syphon+coffee+maker "Google search: syphon coffee maker (there are lots of options)"
+[siphon-coffee-maker]: https://www.google.com/search?q=siphon+coffee+maker "Google search: siphon coffee maker (there are lots of options)"
 [the-bs-generation]: /the-bullshit-generation "The B.S. Generation"
 [montreal-protocol]: https://www.unep.org/ozonaction/who-we-are/about-montreal-protocol "The Montreal Protocol - environment agreement on ozone-depleting substances"
