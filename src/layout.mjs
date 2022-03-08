@@ -141,12 +141,12 @@ export function homepage (latest, second, third) {
       <details open>
         <summary>Contents</summary>
         <ul>
-          <li>in the final</li>
-          <li>this section will</li>
-          <li>contain links to</li>
-          <li>important pages</li>
-          <li>and categories.</li>
-          <li><a href="/seth-battin/" role="author">For example</a>
+          <li><a href="/tags/science/">Science</a></li>
+          <li><a href="/tags/opinion/">Opinion</a></li>
+          <li><a href="/tags/society/">Society</a></li>
+          <li><a href="/tags/programming/">Business</a></li>
+          <li><a href="/rss.xml">Subscriptions 5¢</li>
+          <li><a href="/seth-battin/" role="author">Editor</a>
         </ul>
       </details>
     </nav>
