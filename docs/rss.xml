@@ -5,17 +5,36 @@
     <link>//blog.seth.how/</link>
     <description>Blogs from Seth</description>
     <language>en-us</language>
-    <pubDate>Sat, 19 Feb 2022 03:04:05 GMT</pubDate>
-    <lastBuildDate>Sat, 19 Feb 2022 03:04:05 GMT</lastBuildDate>
+    <pubDate>Tue, 08 Mar 2022 05:20:45 GMT</pubDate>
+    <lastBuildDate>Tue, 08 Mar 2022 05:20:45 GMT</lastBuildDate>
     <generator>https://www.npmjs.com/package/xmldoc and https://github.com/sethbattin/sethbattin.github.io</generator>
     <copyright>The automatic legal kind from originality and fixation, The Year of Our Lord 2022</copyright>
     <managingEditor>me@seth.how</managingEditor>
-    <item>
-      <title>Example Template</title>
-      <link>//blog.seth.how/example-template/</link>
-      <pubDate>Fri, 18 Feb 2022 06:07:08 GMT</pubDate>
-      <guid>//blog.seth.how/example-template/</guid>
-      <category domain="//blog.seth.how/tag/science/">Science</category>
-    </item>
+<item>
+  <title>Cooperation is the Greatest Value</title>
+  <link>//blog.seth.how/cooperation-greatest-value/</link>
+  <pubDate>Sat, 05 Mar 2022 00:00:00 GMT</pubDate>
+  <guid>Cooperation is the Greatest Value</guid>
+  <category domain="/tag/opinion/the-greatest-value/">The-Greatest-Value</category>
+</item>
+<item>
+  <title>Under Construction 2: Visual Design</title>
+  <link>//blog.seth.how/css-misadventures/</link>
+  <pubDate>Sun, 06 Feb 2022 00:00:00 GMT</pubDate>
+  <guid>Under Construction 2: Visual Design</guid>
+  <category domain="/tag/programming/science/accessibility/">Accessibility</category>
+</item>
+<item>
+  <title>Blog Under Construction: Part 3</title>
+  <link>//blog.seth.how/under-construction-3/</link>
+  <pubDate>Wed, 12 Jan 2022 00:00:00 GMT</pubDate>
+  <guid>Blog Under Construction: Part 3</guid>
+</item>
+<item>
+  <title>Beginning a blog</title>
+  <link>//blog.seth.how/starting/</link>
+  <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+  <guid>Beginning a blog</guid>
+</item>
   </channel>
 </rss>
