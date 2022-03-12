@@ -1,6 +1,9 @@
 Cooperation is the Greatest Value
 =================================
 
+<!-- TODO: remove marked's surrounding p tag -->
+<span class="update"><a href="#update-march-12-2022" class="update">Updated March 12, 2022</a></span>
+
 This is my first attempt at a format of essay inspired by my long-gone glory
 days as a high-school speech contestant.  "X is the greatest value" is the
 pattern by which all Lincoln-Douglas debates argued for and against some line
@@ -86,7 +89,7 @@ Even if I can distill only half of that, it will still be the most valuable
 single item in my entire house that isn't an electric car.  It'll make a fine
 inaugural trophy for the adult hobby chemistry set I intend to assemble.  I'll
 probably practice distilling something safer first, and I want to make a
-Breaking Bad coffee apparatus (even though [apparently that's a commodity][syphon-coffee-maker]).
+Breaking Bad coffee apparatus (even though [apparently that's a commodity][siphon-coffee-maker]).
 But after that...I'm definitely distilling this hepatoxin and putting it into
 a nice case.
 
@@ -244,6 +247,17 @@ enough evidence for these bad-faith non-cooperators.  We never will convince
 them, because they don't want to be convinced.  It's time to fire those bad
 teammates and get onto team save-the-world.
 
+Update March 12 2022
+--------------------
+Having just published this article a week prior, I already need to update it.
+This week was one of the best examples of cooperation by my team that I've ever
+been lucky enough to participate in.  I had the same project I had attempted
+months earlier, in almost exactly the same state.  But thanks to an outpouring
+of assistance from my teammates it finished earlier and even more smoothly than
+I could have hoped.
+
+I very nearly overlooked this detail.  I am ecstatic for my next chance to
+credit my team for their accomplishment.
 
 [the greatest value]: /tag/opinion/the-greatest-value "The greatest value(s)"
 [tag-society]: /tag/society "We write blogs about society, and yet we live in one.  a.k.a. politics"

@@ -229,6 +229,12 @@ article p img {
   margin: 1rem;
 }
 
+span.update {
+  display: block;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
 /* these styles apply to post pages */
 article > p {
   margin: 0;
