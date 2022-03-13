@@ -2,10 +2,10 @@ Seth Battin personal blog
 =========================
 I like to wax rheotircal; this is where I write it down.
 
-I also like to program computers, so I'll make my own publisher here.  It's 
+I also like to program computers, so I'll make my own publisher here.  It's
 a work-in-progress.
 
-All endeavors are susceptible to distraction and delay.  This readme is my 
+All endeavors are susceptible to distraction and delay.  This readme is my
 scratch pad to avoid bikeshedding the core function of writing.
 
 TODO
@@ -34,6 +34,7 @@ TODO
 - private drafts start ~ Jan 11th - easy but uses submodules; blog about that
 - css & layout start ~ Jan 11th
 - tagging - Weekend of Feb 5th 2022
+- editorconfig - Sunday Mar 3rd 2022, much nicer markdown paragraph linebreaks
 
 
 How it works
@@ -42,10 +43,10 @@ How it works
 This is a git repository, it's used for github-io which is Github's hosting. I
 further pointed it at an external domain via google's DNS registration.
 
-Anything in /docs is public on the internet at the address specified in the 
+Anything in /docs is public on the internet at the address specified in the
 CNAME file.
 
-This repository holds the raw content and the published content.  I also keep 
+This repository holds the raw content and the published content.  I also keep
 some draft content in a git submodule that is not a public repo; not every-
 thing that i type needs to be published.
 
