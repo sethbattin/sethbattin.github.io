@@ -8,6 +8,11 @@ a work-in-progress.
 All endeavors are susceptible to distraction and delay.  This readme is my
 scratch pad to avoid bikeshedding the core function of writing.
 
+BUGS
+----
+- [ ] something's wrong with nested tags, e.g. science/programming/accessibility
+- [ ] the "business" category link is broken because of that -^
+
 TODO
 ----
 - [x] DNS, hosting, updating, etc.
@@ -74,7 +79,7 @@ Epic: show-worthiness
 
 ### deferred
 - [ ] make the author microdata nicer, maybe a custom renderer
-- [ ] rss (as a cookie alternative)
+- [x] rss (as a cookie alternative)
 - [ ] spellcheck - use hunspell and also blog about it
 
 
@@ -87,4 +92,5 @@ Epic: show-worthiness
 - [ ] sitemap style sheet a la duluth dish via wordpress plugin; use this instead of html sitemap
 
 ### rss
-
+- [ ] add descriptions/snippets/whatever
+- [ ] refine the blockquote excerpt

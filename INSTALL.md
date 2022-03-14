@@ -26,8 +26,8 @@ To use this flag:
 
 Markdown
 --------
-Markdown processing is provided by the nodejs module [marked].  This library 
-can receive markdown from stdin and return html to stdout, or specify other 
+Markdown processing is provided by the nodejs module [marked].  This library
+can receive markdown from stdin and return html to stdout, or specify other
 file io.  It can also operate as a javascript module.
 
 ```bash
@@ -62,20 +62,23 @@ Then check in the changes in /docs
 Categories
 ----------
 
-aka tags
+TODO: record actual implementation here
+TODO: fix the bugs with ensted tags
+TODO: verify that tags have the right rel attribute
 
-A post can be tagged by including a link with href that starts with /tag/.  The links
-will be detected even from unused reference links (bottom of markdown, but not referenced
-in rest of the doc).
+A post can be tagged by including a link with href that starts with /tag/.  The
+links will be detected even from unused reference links (bottom of markdown, but
+not referenced in rest of the doc).
 
-When a post with these links is published, the list of categories will be returned as
-part of the parsing metadata.  The publishing script will update the markdown files in
-tags with matching names (flat names), and then publish each changed source file.
+When a post with these links is published, the list of categories will be
+returned as part of the parsing metadata.  The publishing script will update the
+markdown files in tags with matching names (flat names), and then publish each
+changed source file.
 
-This method is an except to the rule about not saving auxilliary meta data about 
-published content, because the alternative would be to scan every published source file
-whenever any tag is published.  Or reverse-parse html, which isn't part of marked.js's
-featureset.
+This method is an except to the rule about not saving auxilliary meta data about
+published content, because the alternative would be to scan every published
+source file whenever any tag is published.  Or reverse-parse html, which isn't
+part of marked.js's featureset.
 
 Previewing
 ----------
@@ -88,7 +91,7 @@ npm start
 Testing
 -------
 I decided to take my own as-yet-unwritten advice about TDD and add tests.  I
-think jest is pretty good, so i used it.  Now I have to format my article 
+think jest is pretty good, so i used it.  Now I have to format my article
 about ESModules based on the different variety of ways they can confound the
 basic tools of development.
 
@@ -116,7 +119,7 @@ Update snapshots to current values (pass the update flag):
 npm run vizreg -- -u
 ```
 
-For some reason it screws up the font in my WSL shell when i run it.  
+For some reason it screws up the font in my WSL shell when i run it.
 I tihnk it's https://github.com/microsoft/terminal/issues/280
 I tried this to fix that problem:
 
