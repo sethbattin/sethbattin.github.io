@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seth.how Blog | Under Construction part 1: Blogging with markdown</title>
+    <link type="text/css" rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <article itemscope itemtype="https://schema.org/Article">
+    <h1 id="under-construction-part-1-blogging-with-markdown" itemprop="headline">Under Construction part 1: Blogging with markdown</h1>
+<time datetime="2022-5-1" itemProp="datePublished">
+  Sun May 01 2022
+</time>
+<blockquote>
+<p>Alternate title: JavaScript free in 2023.  It should be easier than this.
+Dare I say that was the whole point; to be able to write with zero friction,
+and for that writing to be easily converted to publishable HTML.  But
+boy-howdy did it take some effort to get up to speed.</p>
+</blockquote>
+<aside>This is the first-in-order, third-in-publishing article of a multipart
+series about building a blog.  The <a href="/css-misadventures/" rel="next">
+next article is about CSS</a>.</aside>
+
+<p>This article mostly aims to collect and recollect my thoughts about writing on
+the internet.  How I want to exercise and enjoy the task.  To answer that &quot;how&quot;
+question in a single word: &quot;simple&quot;.  I want it to be as easy as sitting down
+(<a href="/focus-time/" title="The endless pursuit of the ability to accomplish
+anything whatsoever">lol just focus, what&#39;s the problem</a>), typing words, and <a href="https://github.com/sethbattin/sethbattin.github.io/blob/main/INSTALL.md#publishing" title="publishing instructions to myself for this blog">pushing
+&quot;publish&quot;</a>.  I think that goal is entirely feasible for a blog
+system to provide, for it to both have the benefit of being functional <em>AND</em> not
+obstruct me with high-effort, painful chores.</p>
+<p>But as a software expert I know that when computers are simple to use, it means
+someone somewhere spent time making all the complexity invisible.  Usually many,
+many people over a very long time.  I wanted a system for blogging that was
+easy, but I had not yet invested the effort to make it so.  If you are reading
+this, I will assume I was eventually successful.</p>
+<p>As usual I will try to avoid burying the lede; spoilers, the title is correct.
+I chose to type into text files using a format called <a href="https://en.wikipedia.org/wiki/Markdown" title="Wikipedia: Markdown">markdown</a>.  It is
+readable without any post-processing whatsoever.  Because it&#39;s text.  Its
+formatting conventions make it somewhat aesthetic too; headings look important,
+lists look like lists, and it even makes <a href="https://en.wikipedia.org/wiki/Hypertext" title="Wikipedia: Hypertext">hypertext</a> look interactive.  And
+finally it can be transformed into HTML-proper easily.  Great, perfect choice!</p>
+<p>In markdown&#39;s case &quot;easily&quot; is an <a href="/quizzing-is-not-helping/" title="An article about how
+colleagues need help and answers, not further struggle for their own good">exercise typically left to the
+reader</a>.  Since I didn&#39;t care to literally implement
+the specification from scratch, I instead <a href="/homemade-anti-heroes" title="Building from scratch is educational
+but not erudite">stood on the shoulders of
+giants</a> and
+assembled a system from preexisting software.  <a href="#implementation-details">More details
+below</a>, or read on for more treatise on the philosophy
+of the open internet.</p>
+<h2 id="html-and-the-web">HTML and the web</h2>
+<p>The basic idea of connecting computers together over long distances, the premise
+of the internet, started simply enough.  Scientists sharing their research on
+opposite ends of the globe.  Also mega-militaries were trying to eek out a
+marginal pyrrhic victory in a war that would destroy all life, but they&#39;ve
+always done that.  The science folks just wanted to send their simple computer
+files back and forth; to share their data and writing.  They created software to
+send this information, and early builders in silicon valley created mass-appeal
+document viewing applications called &quot;browsers&quot; that could render a simple
+format called HTML.</p>
+<p>HTML stands for &quot;hyper-text markup language&quot;.  The &quot;hyper&quot; here is in the
+mathematical sense of the word.  Like a hyper-cube is conceptually similar to a
+cube but with more dimensions, hypertext is text with more dimensions.  And text
+started with only one: you read in a line from start to finish.  Maybe you skip
+forward or back or repeat, but that&#39;s still just one axis you&#39;re moving along.
+On the web, you can start reading something, then choose to follow a link
+somewhere else.</p>
+<p>If you&#39;re not yet fascinated by that idea of non-linear reading and ideas, you
+clearly didn&#39;t read enough <a href="https://en.wikipedia.org/wiki/Hypertext_fiction" title="Wikipedia: hypertext fiction">choose your own adventure</a> books as a child.  They
+were marvelous games in book form.  This idea dates back almost a century,
+albeit with convoluted technique, machinery, and great effort by authors. In the
+modern world we have it at our fingertips any time we want.  And so does anyone
+who cares to read it.</p>
+<p>I can write here, I can interlink my various writing, and if someone finds any
+particular article they can find the rest of them.  That&#39;s the magic of the
+internet: shit&#39;s both free and awesome.</p>
+<h2 id="complexity-and-capitalism">Complexity and Capitalism</h2>
+<p>As good ideas are wont to do, they were the subject of desire for more goodness.
+In the case of web content, we wanted more graphics, fancier typefaces, video,
+endless cool new stuff.  We also wanted the standards to make sense and be
+useful because good ideas are rarely perfect right out of the gate and typically
+need refinement.  tl;dr we attached new motivations to the original simple
+ideas.</p>
+<p>Every time you add new goals to a system, it gets more complex.  And the new
+goals conflicted with the original design goals, and simplicity lost its spot as
+an important feature.  c&#39;est la vie.</p>
+<p>There were also disagreements.  Different folks holding different ideas about
+what is most important; nothing^ more sinister than that.  They resolved their
+conflicts in a generally wholesome way, with different parties trying different
+things at the same time.  We learned which worked best experimentally; that&#39;s
+still good science even if not traditionally rigorous.  (^ There were also legit
+bad actors actively trying to ruin things, but let&#39;s ignore that for brevity&#39;s
+sake.)</p>
+<aside class="small">Just kidding let's talk about it.
+
+<p>In the early internet days, there were interests that literally tried to stop
+the web from existing.  Not everybody was happy for things to be free,
+especially if free was in direct competition with something they would like to
+continue to profit from.  The most notable example was <a href="https://en.wikipedia.org/wiki/United_States_v._Microsoft_Corp." title="Wikipedia: United States v. Microsoft Corp">Microsoft&#39;s anti-trust
+judgment</a>.  They tried to avoid fair competition, and got a
+corporate slap that seems mythically impossible in the modern environment of the
+United States.</p>
+<p>Those court proceedings revealed something else.  Microsoft&#39;s infamously rumored
+internal corporate strategy of EEE, &quot;<a href="https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish" title="Wikipedia: embrace, extend, and extinguish">embrace, extend, extinguish</a>&quot; was also found
+to be a fact.  They literally built internet explorer to actively ruin the
+internet.  You always knew it in your heart; now you know it&#39;s reality.  You
+thought you hated that company for its crappy OS updates that Apple now does their
+best to &quot;innovate&quot; in exactly the same terrible way.  Turns out you should hate
+it for the same reason as ever: <a href="/expectional-billionaires/" title="Wealth hording and if it&#39;s ever OK (it&#39;s not)">rampant greed is bad for everyone,
+actually</a>.</p>
+<p>They&#39;ve really turned their act around lately.  They love the internet now; it
+helps them sell cloud hosting for military applications much more easily.  They
+technically host this blog too, since it&#39;s a GitHub page :shrug:.</p>
+</aside>
+
+<h2 id="tech-to-the-rescue">Tech to the rescue</h2>
+<p>OK so being a grown-up sucks, even for ideas as great as the internet.  Can&#39;t we
+get back to that simpler time when it was just marquee text and flashing, tiled
+background images?  Or at least putting text and pictures on a website without
+learning 30 years of technology history?</p>
+<p>Yes.  Markdown was explicitly designed to bridge the gulf between text and HTML.
+Instead of convoluted mark-&quot;up&quot;, take all that minutia and turn it into
+something simple to express.  This is what all &quot;technology&quot; aims to do.  For
+markdown, that means giving folks a way to make the majority of HTML trivial to
+write.  It leaves open the ability to fall back to increased complexity (through
+the simple act of allowing HTML to be written verbatim), but adds the option to
+express simple parts simply.  Perfect; exactly what I was looking for.</p>
+<p>Unfortunately markdown is quite literally a concept rather than a tool or even a
+plan.  It was a set of rules for how to transform specific simple bits of text
+into specific simple parts of HTML.  But it was not perfect or even complete,
+and it rapidly gained adoption among many folks who realized its limitations and
+wanted to change it with more features.  Deja vu, eh?</p>
+<p>But even if markdown is now also deviated from its simple roots, it&#39;s still a
+really nice idea.  And like the internet, I want to keep up the spirit of the
+idea even if the practice has completely spiraled out of control.  Anyway,
+here&#39;s me attempting to use it.  That&#39;s what this article is really about.</p>
+<h2 id="failures-as-a-learning-exercise">Failures as a learning exercise</h2>
+<p>To gain expertise, to learn any skill, is partly a matter of learning how to do
+something correctly.  But if that were the natural outcome of trying, then no
+learning would be required and the skill would have no value.</p>
+<p>The real learning is in knowing what to avoid.  I hope to list here a long set
+of failures that might help someone else gain skill faster than I did.</p>
+<p>Failure 1: <a href="/under-construction-3/" title="Programming a blog system instead of just using one like a rational person would do">building from scratch</a>.  This is so common it&#39;s a joke.  At least I
+went in with my eyes open.  That didn&#39;t save me from re-learning the hard lesson
+that it definitely makes sense to just get a wpengine account or whatever.
+Life&#39;s too short.</p>
+<p>Failure 2: Violate all known best practices.  I don&#39;t know why I didn&#39;t like
+anything I had seen from pre-existing markdown blogging systems.  I just didn&#39;t.
+I did learn in a lot of cases why those unsavory choices were made.  Hubris is a
+hell of a drug.  My system is marginally better for going through this pain IMO,
+but I can&#39;t honestly say it was a &quot;good&quot; choice to make.</p>
+<p>Failure 3: Skip complexity of easily available systems, then attempt to handle
+unbelievable complexity of tools that permit doing it manually.  Good lord...
+markdown tech is not straightforward.  Neither is nodejs, and I have literally
+worked in that language every day for the last half decade.  Computers might
+have been a mistake altogether.</p>
+<p>Failure 4: <a href="/css-misadventures/" title="Ever written CSS before?  If so I&#39;m sorry, but no one can ever take away the strength we gained from our struggle">CSS</a>.  I&#39;m not sure I need to elaborate here; suffice to say that
+not every idea from the early internet was a winner.</p>
+<h2 id="design-philosophy">design philosophy</h2>
+<p>It wasn&#39;t all bad.  I had a pretty good notion in mind about what I wanted:
+There are things I can&#39;t yet do, but I&#39;ve covered a high fraction of those goals
+so far.</p>
+<ul>
+<li>Goal 0: I want to make a system where I can write markdown and produce HTML.</li>
+<li>Goal 2: I want that HTML to be very simple, accessible, and functional</li>
+<li>Goal 3: I want to avoid creating special-case markdown to accomplish HTML nuances</li>
+<li>Goal 4: I want to build a featureful blogging platform within the above constraints.</li>
+<li>Goal 5: I want to avoid storing metadata; markdown input, web-root output only.</li>
+</ul>
+<p>I also retain some high-level goals like respect for readers, especially their
+privacy.  I also don&#39;t want to require an iPhone or even YouTube-bandwidth.
+That&#39;s also the spirit of the web, so sayeth I.</p>
+<h2 id="implementation-details">Implementation Details</h2>
+<p>Alrighty....took me long enough to get down here.  Here&#39;s how it works.  By the
+way you can also just <a href="https://github.com/sethbattin/sethbattin.github.io/blob/main/INSTALL.md#publishing" title="publishing instructions to myself for this blog">read the instructions</a> and the rest of
+the code at any time.  I keep some article drafts private, but the code and
+published articles are public, yet again in the spirit of the internet.</p>
+<ul>
+<li>No database except git and the file system</li>
+<li>posts are markdown files with no front-matter (because I hate it).</li>
+<li>markdown processing is just custom enough to extract meta-data that
+front-matter probably should be providing; otherwise vanilla</li>
+<li>file names are document titles and URLs; heading tags (including h1s!) are not
+off-limits like some other markdown systems</li>
+<li>publish dates are based on commits in the public directory.  automatic errata
+marking coming soon (not very soon).</li>
+<li>the only metadata is the rss file, and that&#39;s still internet-spirit published
+artifact.  Categories are the same, though they have markdown source
+descriptions.  Still simple.</li>
+<li>I add images to the public folder, which works just like a public web folder
+like God intended.  git-lfs coming soon (never).</li>
+<li>I use block quotes, asides, and links for their best bloggy purpose within the
+HTML spec.  They cover a lot of use cases, check out <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#attr-tag" title="MDN: HTML attributes">the rel
+attribute</a> - i use it for categories links.</li>
+<li>Zero^^ JavaScript by default.  I put a silly inline-on-click to load a twitter
+embed.  Big kudos to twitter^^^ for making the embed work script-free!</li>
+<li>there is a CSS file.  <em>One.</em>  4k selectors should be enough for anyone.</li>
+<li>goofy stuff to produce the teasers on the homepage, but that was good fun.</li>
+</ul>
+<hr>
+<p>( ^^ There&#39;s a media-query detector for the mobile hamburger menu&#39;s open-state;
+it&#39;s an aside-tag!  Zero duplicate markup and still opens and closes!  Still
+planning a whole article about that awesome creation.)</p>
+<p>( ^^^ If Elon ruins that I&#39;ll have to pick a different pet billionaire for whom
+to be an apologist.)</p>
+<h2 id="rejected-tactics">Rejected tactics</h2>
+<p>I mean I tried a lot of things on this journey, but in particular:</p>
+<ul>
+<li>Gatsby, Hugo, and other markdown blogging systems (front-matter is bad even if
+GitHub renders it properly now)</li>
+<li>nextjs - super overkill, and setting up MDX was not fun or easy.  I&#39;ll figure
+it out soon (....maybe).</li>
+<li>Vercel et al.  They collect usage stats on an opt-out basis?  jfc folks.</li>
+<li>no google analytics.  It&#39;d be cool to know that i&#39;m being read, but not cool
+enough to track folks.  Plus I can make a cool joke about cookies on this site
+being a problem for the user to deal with.  No PII for me.</li>
+</ul>
+<p><a href="https://mncomputinghistory.com/gopher-protocol/"><img src="https://www.downloadclipart.net/medium/world-wide-web-png-image.png" height=400 width=400 alt="world wide web icon" title="Al gore and the University of Minnesota" /></a></p>
+
+    <address>
+      By <a href="/seth-battin" itemprop="author" rel="author" itemscope itemtype="https://schema.org/Person">
+        <span itemprop="name">Seth Battin</span>
+      </a>
+    </address>
+<span>This article was published under: <a href="/tag/opinion/" rel="tag">Opinion</a>, <a href="/tag/society/" rel="tag">Society</a>, <a href="/tag/science/programming/" rel="tag">Programming</a> and <a href="/tag/science/" rel="tag">Science</a></span>
+    </article>
+  </body>
+</html>

@@ -1,13 +1,13 @@
 # Under Construction part 1: Blogging with markdown
 
-> Alternate title: javascript free in 2023.  It should be easier than this.
+> Alternate title: JavaScript free in 2023.  It should be easier than this.
 > Dare I say that was the whole point; to be able to write with zero friction,
-> and for that writing to be easily converted to publishable html.  But
+> and for that writing to be easily converted to publishable HTML.  But
 > boy-howdy did it take some effort to get up to speed.
 
 <aside>This is the first-in-order, third-in-publishing article of a multipart
 series about building a blog.  The <a href="/css-misadventures/" rel="next">
-next article is about css</a>.</aside>
+next article is about CSS</a>.</aside>
 
 This article mostly aims to collect and recollect my thoughts about writing on
 the internet.  How I want to exercise and enjoy the task.  To answer that "how"
@@ -58,7 +58,7 @@ forward or back or repeat, but that's still just one axis you're moving along.
 On the web, you can start reading something, then choose to follow a link
 somewhere else.
 
-If you're not yet facsinated by that idea of non-linear reading and ideas, you
+If you're not yet fascinated by that idea of non-linear reading and ideas, you
 clearly didn't read enough [choose your own adventure] books as a child.  They
 were marvelous games in book form.  This idea dates back almost a century,
 albeit with convoluted technique, machinery, and great effort by authors. In the
@@ -95,13 +95,13 @@ sake.)
 In the early internet days, there were interests that literally tried to stop
 the web from existing.  Not everybody was happy for things to be free,
 especially if free was in direct competition with something they would like to
-continue to profit from.  The most notable example was [microsoft's anti-trust
-judgement][us-v-microsoft].  They tried to avoid fair competition, and got a
+continue to profit from.  The most notable example was [Microsoft's anti-trust
+judgment][us-v-Microsoft].  They tried to avoid fair competition, and got a
 corporate slap that seems mythically impossible in the modern environment of the
 United States.
 
-Those court proceedings revealed something else.  Microsoft's imfamously rumored
-internal coporate strategy of EEE, "[embrace, extend, extinguish]" was also found
+Those court proceedings revealed something else.  Microsoft's infamously rumored
+internal corporate strategy of EEE, "[embrace, extend, extinguish]" was also found
 to be a fact.  They literally built internet explorer to actively ruin the
 internet.  You always knew it in your heart; now you know it's reality.  You
 thought you hated that company for its crappy OS updates that Apple now does their
@@ -111,12 +111,12 @@ actually][exceptional-billionaires].
 
 They've really turned their act around lately.  They love the internet now; it
 helps them sell cloud hosting for military applications much more easily.  They
-technically host this blog too, since it's a github page :shrug:.
+technically host this blog too, since it's a GitHub page :shrug:.
 </aside>
 
 ## Tech to the rescue
 
-Ok so being a grown-up sucks, even for ideas as great as the internet.  Can't we
+OK so being a grown-up sucks, even for ideas as great as the internet.  Can't we
 get back to that simpler time when it was just marquee text and flashing, tiled
 background images?  Or at least putting text and pictures on a website without
 learning 30 years of technology history?
@@ -137,7 +137,7 @@ wanted to change it with more features.  Deja vu, eh?
 
 But even if markdown is now also deviated from its simple roots, it's still a
 really nice idea.  And like the internet, I want to keep up the spirit of the
-idea even if the practice has completely spiralled out of control.  Anyway,
+idea even if the practice has completely spiraled out of control.  Anyway,
 here's me attempting to use it.  That's what this article is really about.
 
 ## Failures as a learning exercise
@@ -157,7 +157,7 @@ Life's too short.
 Failure 2: Violate all known best practices.  I don't know why I didn't like
 anything I had seen from pre-existing markdown blogging systems.  I just didn't.
 I did learn in a lot of cases why those unsavory choices were made.  Hubris is a
-hell of a drug.  My system is marginally better for goign through this pain IMO,
+hell of a drug.  My system is marginally better for going through this pain IMO,
 but I can't honestly say it was a "good" choice to make.
 
 Failure 3: Skip complexity of easily available systems, then attempt to handle
@@ -166,7 +166,7 @@ markdown tech is not straightforward.  Neither is nodejs, and I have literally
 worked in that language every day for the last half decade.  Computers might
 have been a mistake altogether.
 
-Failure 4: [css].  I'm not sure I need to elaborate here; suffice to say that
+Failure 4: [CSS].  I'm not sure I need to elaborate here; suffice to say that
 not every idea from the early internet was a winner.
 
 ## design philosophy
@@ -175,14 +175,14 @@ It wasn't all bad.  I had a pretty good notion in mind about what I wanted:
 There are things I can't yet do, but I've covered a high fraction of those goals
 so far.
 
-Goal 0: I want to make a system where I can write markdown and produce html.
-Goal 2: I want that html to be very simple, accessible, and functional
-Goal 3: I want to avoid creating special-case markdown to accomplish html nuances
-Goal 4: I want to build a featureful blogging platform within the above contraints.
-Goal 5: I want to avoid storing metadata; markdown input, web-root output only.
+- Goal 0: I want to make a system where I can write markdown and produce HTML.
+- Goal 2: I want that HTML to be very simple, accessible, and functional
+- Goal 3: I want to avoid creating special-case markdown to accomplish HTML nuances
+- Goal 4: I want to build a featureful blogging platform within the above constraints.
+- Goal 5: I want to avoid storing metadata; markdown input, web-root output only.
 
 I also retain some high-level goals like respect for readers, especially their
-privacy.  I also don't want to require an iphone or even youtube-bandwith.
+privacy.  I also don't want to require an iPhone or even YouTube-bandwidth.
 That's also the spirit of the web, so sayeth I.
 
 ## Implementation Details
@@ -192,10 +192,10 @@ way you can also just [read the instructions][publish-scripts] and the rest of
 the code at any time.  I keep some article drafts private, but the code and
 published articles are public, yet again in the spirit of the internet.
 
-- No database except git and the filesystem
-- posts are markdown files with no frontmatter (because I hate it).
+- No database except git and the file system
+- posts are markdown files with no front-matter (because I hate it).
 - markdown processing is just custom enough to extract meta-data that
-  frontmatter probably should be providing; otherwise vanilla
+  front-matter probably should be providing; otherwise vanilla
 - file names are document titles and URLs; heading tags (including h1s!) are not
   off-limits like some other markdown systems
 - publish dates are based on commits in the public directory.  automatic errata
@@ -204,13 +204,13 @@ published articles are public, yet again in the spirit of the internet.
   artifact.  Categories are the same, though they have markdown source
   descriptions.  Still simple.
 - I add images to the public folder, which works just like a public web folder
-  like God intended.  gfs-support coming soon (never).
+  like God intended.  git-lfs coming soon (never).
 - I use block quotes, asides, and links for their best bloggy purpose within the
-  html spec.  They cover a lot of use cases, check out [the rel
+  HTML spec.  They cover a lot of use cases, check out [the rel
   attribute][rel=tag] - i use it for categories links.
-- Zero^^ javascript by default.  I put a silly inline-onclick to load a twitter
+- Zero^^ JavaScript by default.  I put a silly inline-on-click to load a twitter
   embed.  Big kudos to twitter^^^ for making the embed work script-free!
-- there is a css file.  _One._  4k selectors should be enould for anyone.
+- there is a CSS file.  _One._  4k selectors should be enough for anyone.
 - goofy stuff to produce the teasers on the homepage, but that was good fun.
 
 
@@ -228,15 +228,16 @@ to be an apologist.)
 
 I mean I tried a lot of things on this journey, but in particular:
 
-- gatsby, hugo, and other markdown blogging systems (frontmatter is bad even if
-  github renders it properly now)
+- Gatsby, Hugo, and other markdown blogging systems (front-matter is bad even if
+  GitHub renders it properly now)
 - nextjs - super overkill, and setting up MDX was not fun or easy.  I'll figure
   it out soon (....maybe).
-- vercel et al.  They collect usage stats on an opt-out basis?  jfc folks.
+- Vercel et al.  They collect usage stats on an opt-out basis?  jfc folks.
 - no google analytics.  It'd be cool to know that i'm being read, but not cool
   enough to track folks.  Plus I can make a cool joke about cookies on this site
   being a problem for the user to deal with.  No PII for me.
 
+<a href="https://mncomputinghistory.com/gopher-protocol/"><img src="https://www.downloadclipart.net/medium/world-wide-web-png-image.png" height=400 width=400 alt="world wide web icon" title="Al gore and the University of Minnesota" /></a>
 
 [tag-opinion]: /tag/opinion/ "There's a lot of non-fact in here"
 [tag-society]: /tag/society/ "Yeah this is the world we live in"
@@ -247,13 +248,14 @@ anything whatsoever"
 [quizzing is not helping]: /quizzing-is-not-helping/ "An article about how
 colleagues need help and answers, not further struggle for their own good"
 [markdown]: https://en.wikipedia.org/wiki/Markdown "Wikipedia: Markdown"
+[hypertext]: https://en.wikipedia.org/wiki/Hypertext "Wikipedia: Hypertext"
 [using-libraries]: /homemade-anti-heroes "Building from scratch is educational
 but not erudite"
 [choose your own adventure]: https://en.wikipedia.org/wiki/Hypertext_fiction "Wikipedia: hypertext fiction"
 [us-v-microsoft]: https://en.wikipedia.org/wiki/United_States_v._Microsoft_Corp. "Wikipedia: United States v. Microsoft Corp"
 [embrace, extend, extinguish]: https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish "Wikipedia: embrace, extend, and extinguish"
-[exceptional-billionaires]: /expectional-billionaires/ "Wealth hording and if it's ever ok (it's not)"
-[building-from-scratch]: /under-construction-3/ "Programming a blog system instead of just using one like a rational person would do"
+[exceptional-billionaires]: /expectional-billionaires/ "Wealth hording and if it's ever OK (it's not)"
+[building from scratch]: /under-construction-3/ "Programming a blog system instead of just using one like a rational person would do"
 [css]: /css-misadventures/ "Ever written CSS before?  If so I'm sorry, but no one can ever take away the strength we gained from our struggle"
 [rel=tag]: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#attr-tag "MDN: HTML attributes"
 [unused]: https://google.com "an unused link to test marked.js"
