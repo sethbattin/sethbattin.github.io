@@ -227,6 +227,6 @@ time you read this.
 [tag-a11y]: /tag/science/programming/accessibility/ "Accessibility"
 
 [next]: /under-construction-3/ "blog under construction part 3 - what audience and why bespoke"
-[prev]: /blogging-with/markdown/ "Blogging with markdown"
+[prev]: /blogging-with-markdown/ "Blogging with markdown"
 
 
