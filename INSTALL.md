@@ -43,11 +43,14 @@ npm run mark -- -i INSTALL.md
 Index Page
 ----------
 
-To update the root page with recent article teasers:
+To update the root page with recent article teasers, do the following:
 
 ```bash
 npm run pub:homepage
 ```
+
+*NOTE*: the recent article must be published or it won't work.
+
 
 Then check in the changes to `docs/index.html`
 

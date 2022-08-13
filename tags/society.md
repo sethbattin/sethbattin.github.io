@@ -8,4 +8,5 @@ in.  Don't be a jerk that way.
 Anyway here are some articles where I say what I think about living in a world
 that has other people in it.
 
+[blogging-with-markdown]: /blogging-with-markdown/ "Under Construction part 1: Blogging with markdown"
 [cooperation-greatest-value]: /cooperation-greatest-value/ "Cooperation is the Greatest Value"
