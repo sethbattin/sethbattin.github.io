@@ -8,6 +8,10 @@ a work-in-progress.
 All endeavors are susceptible to distraction and delay.  This readme is my
 scratch pad to avoid bikeshedding the core function of writing.
 
+The other file [INSTALL.md] contains notes about how to check out the code,
+install dependencies, use specific markdown elements for articles (blurbs,
+tags, sitemap entries), and finally how to publish.
+
 BUGS
 ----
 - [ ] something's wrong with nested tags, e.g. science/programming/accessibility
@@ -53,7 +57,9 @@ CNAME file.
 
 This repository holds the raw content and the published content.  I also keep
 some draft content in a git submodule that is not a public repo; not every-
-thing that i type needs to be published.
+thing that i type needs to be published.  I find it conducing my ability to
+actually do the writing to not concern myself with the consequences of
+publishing.
 
 
 Epic: show-worthiness
@@ -94,3 +100,5 @@ Epic: show-worthiness
 ### rss
 - [ ] add descriptions/snippets/whatever
 - [ ] refine the blockquote excerpt
+
+[INSTALL.md] ./INSTALL.md

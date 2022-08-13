@@ -1,5 +1,9 @@
 Installation
 ============
+> A file to serve as operating instructions, how-to, examples, and test cases.
+> This leading block quote becomes a small "blurb" at the topic of the article,
+> which is useful for page metadata and for excluding from the home page
+> paragraphs.
 
 This project builds web assets from markdown files, mainly a personal blog.
 These instructions are mostly partially notes-to-self for posterity.  I don't
