@@ -145,6 +145,7 @@ export function homepage (latest, second, third) {
           <li><a href="/tag/opinion/">Opinion</a></li>
           <li><a href="/tag/society/">Society</a></li>
           <li><a href="/tag/programming/">Business</a></li>
+          <li><a href="/tag/travel/">Travel</a></li>
           <li><a href="/rss.xml">Subscriptions 5¢</li>
           <li><a href="/seth-battin/" role="author">Editor</a>
         </ul>

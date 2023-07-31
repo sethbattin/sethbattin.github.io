@@ -3,7 +3,6 @@
   <head>
     <title>Seth.how Blog</title>
     <link type="text/css" rel="stylesheet" href="/main.css" />
-    <link type="application/rss+xml" rel="alternate" href="rss.xml" title="RSS">
   </head>
   <body
     onload="document.querySelector('nav details').open=window.matchMedia('(min-width: 540px)').matches"
@@ -14,8 +13,8 @@
     <div class="ticker d-f f-ai-e f-jc-sb">
       <p>The most available domain for almost regular updates.</p>
       
-<time datetime="2022-05-01" itemProp="datePublished">
-  Sun May 01 2022
+<time datetime="2023-07-30" itemProp="datePublished">
+  Sun Jul 30 2023
 </time>
 
     </div>
@@ -28,12 +27,45 @@
           <li><a href="/tag/opinion/">Opinion</a></li>
           <li><a href="/tag/society/">Society</a></li>
           <li><a href="/tag/programming/">Business</a></li>
+          <li><a href="/tag/travel/">Travel</a></li>
           <li><a href="/rss.xml">Subscriptions 5¢</li>
           <li><a href="/seth-battin/" role="author">Editor</a>
         </ul>
       </details>
     </nav>
     <main>
+    <article>
+    <h2>The Best Day All Week</h2>
+    
+<time datetime="2023-07-30" itemProp="datePublished">
+  Sun Jul 30 2023
+</time>
+
+    <address><a rel="author" href="/seth-battin">Seth Battin</a></address>
+    <p>Best day yet.  I woke at 2:30 EDT, knowing that my sleep schedule was decimated
+from sharing a room with three other loud sleepers since Tuesday, while also
+trying to squeeze in work activities in the downtime.  But today being Saturday,
+there was no risk to failure other than missing some optional activities due to
+being tired.  That was fine, so I felt great.</p>
+<p>I took my work to the lobby (I had nothing better to do, after all), but the
+lobby continued its week of being awful for working.  The hotel&#39;s coffee was
+available but not complementary at its in-lobby franchise coffee shop, but it was
+closed.  So I went outside and sat on the sidewalk.  I got more work done than I
+had the whole previous day.</p>
+<p>Eventually I overheard a parked airport cabdriver asking a hotel staff member
+when coffee would be available.  I proffered &quot;it opens at 6&quot;, and he challenged
+back &quot;that&#39;s late, isn&#39;t it?&quot;.  I said &quot;yeah&quot;.  Since I was also looking for
+coffee, I continued talking to the driver as the hotel staff walked away.  It
+hadn&#39;t occurred to me that they weren&#39;t having a friendly conversation.</p>
+<p>But the driver seemed friendly to me.  I offered to walk for coffee with him,
+and he agreed.  We only went far enough to confirm that a different franchise
+coffee and donuts place was not yet open.  He almost got hit by another cab
+while trying to find info on his phone.  He was jaywalking, so he said &quot;sorry&quot;,
+and I said &quot;don&#39;t worry, they saw you.&quot;  He said &quot;yeah, they&#39;re the one with the
+horn, not me.&quot;  I liked that line.</p>
+
+    <a href="/unserious-in-new-york/">Continue reading - Society pg 1</a>
+  </article>
     <article>
     <h2>Under Construction part 1: Blogging with markdown</h2>
     
@@ -55,21 +87,6 @@ someone somewhere spent time making all the complexity invisible.  Usually many,
 many people over a very long time.  I wanted a system for blogging that was
 easy, but I had not yet invested the effort to make it so.  If you are reading
 this, I will assume I was eventually successful.</p>
-<p>As usual I will try to avoid burying the lede; spoilers, the title is correct.
-I chose to type into text files using a format called <a href="https://en.wikipedia.org/wiki/Markdown" title="Wikipedia: Markdown">markdown</a>.  It is
-readable without any post-processing whatsoever.  Because it&#39;s text.  Its
-formatting conventions make it somewhat aesthetic too; headings look important,
-lists look like lists, and it even makes <a href="https://en.wikipedia.org/wiki/Hypertext" title="Wikipedia: Hypertext">hypertext</a> look interactive.  And
-finally it can be transformed into HTML-proper easily.  Great, perfect choice!</p>
-<p>In markdown&#39;s case &quot;easily&quot; is an <a href="/quizzing-is-not-helping/" title="An article about how
-colleagues need help and answers, not further struggle for their own good">exercise typically left to the
-reader</a>.  Since I didn&#39;t care to literally implement
-the specification from scratch, I instead <a href="/homemade-anti-heroes" title="Building from scratch is educational
-but not erudite">stood on the shoulders of
-giants</a> and
-assembled a system from preexisting software.  <a href="#implementation-details">More details
-below</a>, or read on for more treatise on the philosophy
-of the open internet.</p>
 
     <a href="/blogging-with-markdown/">Continue reading - Science pg 1</a>
   </article>
@@ -81,7 +98,8 @@ of the open internet.</p>
 </time>
 
     <address><a rel="author" href="/seth-battin">Seth Battin</a></address>
-    <p>This is my first attempt at a format of essay inspired by my long-gone glory
+    <p><span class="update"><a href="#update-march-12-2022" class="update">Updated March 12, 2022</a></span></p>
+<p>This is my first attempt at a format of essay inspired by my long-gone glory
 days as a high-school speech contestant.  &quot;X is the greatest value&quot; is the
 pattern by which all Lincoln-Douglas debates argued for and against some line
 of moral judgment about society.  I recall &quot;the possession of nuclear weapons
@@ -97,29 +115,6 @@ course of behavior.  It&#39;s just intrinsically a good thing.  That&#39;s what 
 going for here.</p>
 
     <a href="/cooperation-greatest-value/">Continue reading - Science pg 1</a>
-  </article>
-    <article>
-    <h2>Under Construction 2: Visual Design</h2>
-    
-<time datetime="2022-02-06" itemProp="datePublished">
-  Sun Feb 06 2022
-</time>
-
-    <address><a rel="author" href="/seth-battin">Seth Battin</a></address>
-    <p>Alternate title: from-scratch CSS misadventures in emulating print media; how I
-learned to stop worrying and love css columns and flex-box.</p>
-<p>After <a href="/under-construction-3/" title="blog under construction part 3 - what audience and why bespoke">being personally attacked</a> about building a blog instead of writing
-content for it, I further <del>was dog-piled</del> felt seen by folks noting that it was
-equally likely we&#39;d waste our time in style-sheets instead of making the platform.
-So, so true.</p>
-<p>But now being on the other side of that process, I&#39;m happy to have spent the 
-effort.  I like the look and am excited to refine it further.  This article 
-will introduce additional items that I need to style, and I&#39;m genuinely looking
-forward to it.  Among those new features: the 3rd article on the home page (the
-intended maximum number), block-quote-based large text blurbs, aside elements, 
-and various inter-linking exercises like categories and prev/next relation links.<br>Huzzah!</p>
-
-    <a href="/css-misadventures/">Continue reading - Science pg 1</a>
   </article>
     </main>
   </body>
