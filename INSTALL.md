@@ -159,3 +159,14 @@ How to XML (ideation phase):
 
 [marked]: https://marked.js.org/ "Marked - markdown processor for javascript"
 [compressor.js]: https://fengyuanchen.github.io/compressorjs/ "compressor.js - javascript image compressor"
+
+Tags
+----
+
+0. Add a link to any article with the path `tag/{tagname}`  (singular).  It can be
+a reference link that isn't actually used in the text.
+
+1. Run `npm run pub posts/{articlefilename}`
+2. that will create new /tags/{tagfilename}.md files and publish them.
+3. Add descriptions to new tag files if you want
+4. run `npm run pub docs/tag/{tagname}/index.html` to update the tag html
