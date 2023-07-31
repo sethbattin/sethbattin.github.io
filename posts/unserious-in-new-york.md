@@ -276,5 +276,11 @@ The lobby coffeehouse was finally open.  Half an hour early!  I paid for a seat 
 buying a cup.  Actually I wrote down my room number and they trusted that the
 dollars would find themselves.  Then I started writing this.
 
+<a href="./liberty-by-molly-full.jpg">
+<img src="./liberty-by-molly.jpg" alt="statue of liberty at sunset" title="this
+city is great, and it encompasses all the American ideals.  Sadly that includes
+capitalism." height=120 width=80 />
+</a>
+
 [tag-travel]: /tag/travel
 [tag-society]: /tag/society
