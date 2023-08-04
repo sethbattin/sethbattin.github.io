@@ -67,21 +67,21 @@ I tried to resume work.  I saw a person with male features presenting femme.
 Actually I noticed those details in reverse order.  I didn't assume they were a
 prostitute until they leisurely walked by a second time in the opposite
 direction.  Their outfit definitely evoked the first act scenes of [Pretty
-Woman].  I hope they eventually lived out second act's social victory over the
+Woman].  I hope they eventually lived out the second act's social victory over the
 high-fashion boutique snobs who reject them for lack of appearance of being a
 good customer.  Or at least I hope they overcome whatever other aspect of
 society has wronged them.  I wanted to make friends with them as well and learn
 their story.  But they were busy working, and I had no cash to pay for their
-time no ability to accept a freebie.  I went back to trying to work.
+time nor ability to accept a freebie.  I went back to trying to work.
 
 [Pretty Woman]: https://en.wikipedia.org/wiki/Pretty_Woman "Wikipedia: Pretty Woman (1990 film)"
 
 A large older man with a cane walked by, greeted me, and came over.  He asked
 for a few dollars for coffee.  I told him I had no cash but that I'd be happy to
-buy him a coffee.  I repeated, so I invited him to walk to my new favorite New
+buy him a coffee.  He repeated, so I invited him to walk to my new favorite New
 York coffee shop.  He indicated his cane, and I apologized for being
 inconsiderate.  He again said he was hoping for a few dollars, so I showed him
-my empty wallet, and apologized for being dry.  "If you're dry you're dry" he
+my empty wallet and apologized for being dry.  "If you're dry you're dry" he
 said as he left.  That same member of the hotel staff stared my way with no
 expression.  I smiled and went back to working.
 
@@ -148,10 +148,10 @@ of hot water for her morning tea.  I had failed to get one for her the day
 before.  But since then I had learned the New York customs and earned the
 coffee shop social capital.  Upon delivering it, she said she only wanted the
 cup, not the water.  Indeed, the water was free once you paid for the cup.  Or
-in my case, cutting in line and arguing in ESL that I deserved a free cup that
-was challenging.</aside>
+in my case, cutting in line and arguing in ESL that I deserved a free cup -- that
+was the challenging part.</aside>
 
-As Peter and I walked through time square at 4:30am, my awe compelled me to
+As Peter and I walked through times square at 4:30am, my awe compelled me to
 comment about it being amazing.  I said I know it's artificial and not really New
 York in spirit except tourism and commerce and mass media.  Peter agreed and
 added that he was looking for a few dollars.  I assumed he was still thinking of
