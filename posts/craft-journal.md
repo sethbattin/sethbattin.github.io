@@ -45,6 +45,8 @@ guess.
 writing into the book.  Subheadings are added where helpful; mostly
 chronographically.</aside>
 
+<style> time { margin-right: 0.5em; }</style>
+
 Acknolwedgements
 ----------------
 
@@ -128,7 +130,7 @@ We considered visiting the pen store on our way out of the fair.  But that
 proprietor was over-eager to joke about violence, and a bullet-shaped pen is not
 my style.
 
-<time datetime="2023-10-01">Sun Oct 1 2023</time>Depart by buss and introspect
+<time datetime="2023-10-01">Sun Oct 1 2023</time>Depart by bus and introspect
 out loud
 
 Unexpected workday marathon
@@ -183,9 +185,10 @@ heard Her think it, which is definitely a thing that happens between Her and I.
 We've been married long enough; it is expected.
 
 <time datetime="2023-10-06">Fri Oct 6 2023</time>  
-In which taking  
-credit for noticing is  
-both silly and lonely.
+
+    In which taking  
+    credit for noticing is  
+    both silly and lonely.
 
 ---
 
@@ -199,8 +202,8 @@ script.
 
 <time datetime="2023-10-06">Fri Oct 6 2023</time>
 
-Do not expect failure,  
-nor disappointment.
+    Do not expect failure,  
+    nor disappointment.
 
 ---
 
@@ -225,8 +228,8 @@ everything I had believed about how to have clear writing.
 
 <time datetime="2023-10-06">Fri Oct 6 2023</time>
 
-No really, gel-rollers  
-are fantastic.
+    No really, gel-rollers  
+    are fantastic.
 
 ---
 
@@ -257,8 +260,8 @@ shopkeeper for the last time.
 
 <time datetime="2023-10-06">Fri Oct 6 2023</time>
 
-You can always  
-thank someone more.
+    You can always  
+    thank someone more.
 
 ---
 
@@ -307,8 +310,8 @@ my Princess so often says: I can handle disappointment.
 
 <time datetime="2023-10-06">Fri Oct 6 2023</time>
 
-Existence,  
-not Acceptance.
+    Existence,  
+    not Acceptance.
 
 ---
 
@@ -326,8 +329,8 @@ Anything I believe to be impossible...simply is not.
 
 <time datetime="2023-10-06">Fri Oct 6 2023</time>
 
-Won't I ruin it?  
-If I do not give up?
+    Won't I ruin it?  
+    If I do not give up?
 
 Two times eleven is fourty-two
 ------------------------------
@@ -343,7 +346,7 @@ Two times eleven is fourty-two
 <time datetime="2023-10-06">Fri Oct 6 2023</time>
 
 <img src="./x-marks-the-middle.png" alt="a map on a scroll with a meandering
-path leading to an X." width=100 height=100 />
+path leading to an X." width=100 height=100 /><br style="clear: both;" />
 
 > New pen though.  Felt tip.  0.5, baby.
 
@@ -446,14 +449,14 @@ the others.
 
 ---
 
-If I mix truth in with imagination  
-or the reverse  
-Fact and fiction benefit both.  
-If I call it a story  
-Or just a string of thoughts  
-To keep a theme
-To vary, profane  
-To me, no worry, all the same
+    If I mix truth in with imagination  
+    or the reverse  
+    Fact and fiction benefit both.  
+    If I call it a story  
+    Or just a string of thoughts  
+    To keep a theme
+    To vary, profane  
+    To me, no worry, all the same
 
 Oct Seven - yesterday's marathon
 --------------------------------
@@ -474,11 +477,11 @@ barriers.  I hope it is inexhaustible.
 
 <time datetime="2023-10-07">Sat Oct 7 2023</time>
 
-   Problem, Algorithm,  
-   Program, Process.  
-   Change the first if you can.  
-
-- Richard Buckland
+> Problem, Algorithm,  
+> Program, Process.  
+> Change the first if you can.  
+>
+> - Richard Buckland
 
 ---
 
@@ -525,8 +528,8 @@ an opportunity, a gift, and to be treasured.  Savored.
 
 <time datetime="2023-10-07">Sat Oct 7 2023</time>
 
-Not too fast.  
-Not too slow.  
+    Not too fast.  
+    Not too slow.  
 
 ---
 
@@ -534,10 +537,10 @@ When I put my triple-line conclusion markets in yesterday's writing, I think it
 made me faster.  I was always ready to stop.  I lost lines of thought, sure, but
 some thoughts deserve that fate.  The good ones found their way back to me.
 
-I was not paralyzed.  
-I paused for pace.  
-I kept up.  
-I went far.  
+    I was not paralyzed.  
+    I paused for pace.  
+    I kept up.  
+    I went far.  
 
 > Good thoughts end.
 
@@ -546,8 +549,7 @@ I went far.
 I did not expect to have time.  It might have been foolish to try to find it.  I
 doubted when I did find.
 
-> a nagging fear of some other, urgent attention target.  Something that would
-> make me regret.
+    a nagging fear of some other, urgent attention target.  Something that would make me regret.
 
 No such imaginary anguish appeared.
 
@@ -557,29 +559,29 @@ I sought this joy instead.
 
 ---
 
-My joy was gone.  
-I could not imagine it.  
-  No matter.  
-  A slow pace.  
-  I will reencounter.  
-Still, who ever caught something by standing still?  
-I did.  Right where I left it.  
-It kept flying.  
-It caught me.  
+    My joy was gone.  
+    I could not imagine it.  
+      No matter.  
+      A slow pace.  
+      I will reencounter.  
+    Still, who ever caught something by standing still?  
+    I did.  Right where I left it.  
+    It kept flying.  
+    It caught me.  
 
 ---
 
-Twice in as many  
-Further than I've ever  
-
-I've gone so far.  
+    Twice in as many  
+    Further than I've ever  
+    
+    I've gone so far.  
 
 ---
 
 40.
 
-I am.  Successfully.  
-Where I began.  
+    I am.  Successfully.  
+    Where I began.  
 
 
 <time datetime="2023-10-07">Saturday  
