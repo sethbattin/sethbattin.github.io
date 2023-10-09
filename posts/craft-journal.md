@@ -591,3 +591,5 @@ to My Wife.
 upright, flipped top-to-bottom, turned upside-side, and finally upsidedown and
 backwards called 'both'.  Upside-down has an arrow labeling it 'you are here'."
 height=100 width=100 />](./journal-photo.png)
+
+[tag: writing]: /tag/writing 
