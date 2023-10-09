@@ -29,3 +29,5 @@ Github to the rescue.  [Github pages][github-pages] they cover all my constraint
 Great.  Now on to the [small problem of generating those files][blogging with markdown].  Thanks for reading; welcome to my blog.
 
 <img itemprop="image" src="/starting/hero.png" alt="a crappy turtle sketch" title="actual picture of me starting this blog" width=400 />
+
+[tag: writing]: /tag/writing 

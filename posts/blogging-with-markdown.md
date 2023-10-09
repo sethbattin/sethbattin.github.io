@@ -242,6 +242,7 @@ I mean I tried a lot of things on this journey, but in particular:
 [tag-opinion]: /tag/opinion/ "There's a lot of non-fact in here"
 [tag-society]: /tag/society/ "Yeah this is the world we live in"
 [tag-science-prog]: /tag/science/programming "always.  always."
+[tag: writing]: /tag/writing 
 [adult-adhd]: /focus-time/ "The endless pursuit of the ability to accomplish
 anything whatsoever"
 [publish-scripts]: https://github.com/sethbattin/sethbattin.github.io/blob/main/INSTALL.md#publishing "publishing instructions to myself for this blog"
