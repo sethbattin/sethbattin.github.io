@@ -5,11 +5,18 @@
     <link>//blog.seth.how/</link>
     <description>Blogs from Seth</description>
     <language>en-us</language>
-    <pubDate>Mon, 31 Jul 2023 03:09:28 GMT</pubDate>
-    <lastBuildDate>Mon, 31 Jul 2023 03:09:28 GMT</lastBuildDate>
+    <pubDate>Mon, 09 Oct 2023 01:11:50 GMT</pubDate>
+    <lastBuildDate>Mon, 09 Oct 2023 01:11:50 GMT</lastBuildDate>
     <generator>https://www.npmjs.com/package/xmldoc and https://github.com/sethbattin/sethbattin.github.io</generator>
     <copyright>The automatic legal kind from originality and fixation, The Year of Our Lord 2023</copyright>
     <managingEditor>me@seth.how</managingEditor>
+<item>
+  <title>Writing by Hand</title>
+  <link>https://blog.seth.how/craft-journal/</link>
+  <pubDate>Sun, 08 Oct 2023 05:00:00 GMT</pubDate>
+  <guid>Writing by Hand</guid>
+  <category domain="/tag/writing/">Writing</category>
+</item>
 <item>
   <title>The Best Day All Week</title>
   <link>https://blog.seth.how/unserious-in-new-york/</link>
