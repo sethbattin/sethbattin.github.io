@@ -345,8 +345,8 @@ Two times eleven is fourty-two
 
 <time datetime="2023-10-06">Fri Oct 6 2023</time>
 
-<img src="./x-marks-the-middle.png" alt="a map on a scroll with a meandering
-path leading to an X." width=100 height=100 /><br style="clear: both;" />
+<img src="./map.png" alt="a map on a scroll with a meandering
+path leading to an X." width=100 /><br style="clear: both;" />
 
 > New pen though.  Felt tip.  0.5, baby.
 
@@ -546,16 +546,16 @@ some thoughts deserve that fate.  The good ones found their way back to me.
 
 ---
 
-I did not expect to have time.  It might have been foolish to try to find it.  I
-doubted when I did find.
+    I did not expect to have time.
+    It might have been foolish to try to find it.
+      I doubted when I did find.
 
-    a nagging fear of some other, urgent attention target.  Something that would make me regret.
+      a nagging fear of some other, urgent attention target.
+      Something that would make me regret.
 
-No such imaginary anguish appeared.
-
-I am glad I did not seek it.
-
-I sought this joy instead.
+    No such imaginary anguish appeared.
+    I am glad I did not seek it.
+    I sought this joy instead.
 
 ---
 
@@ -584,14 +584,19 @@ I sought this joy instead.
     Where I began.  
 
 
-<time datetime="2023-10-07">Saturday  
-October 7</time>
+<time datetime="2023-10-07">
+    Saturday  
+    October 7
+</time>
 
-to My Wife.
+> to My Wife.
 
-[<img src="./book-orientations.png" alt="Book illustration.  Shown laying
+[<img src="./illustration.png" alt="Book illustration.  Shown laying
 upright, flipped top-to-bottom, turned upside-side, and finally upsidedown and
 backwards called 'both'.  Upside-down has an arrow labeling it 'you are here'."
-height=100 width=100 />](./journal-photo.png)
+width=100 />](./notebook.png) 
+<br style="clear: both;" />
+
+---
 
 [tag: writing]: /tag/writing 
