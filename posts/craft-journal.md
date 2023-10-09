@@ -14,7 +14,7 @@ out that I have long held an affection for small blank booklets.  I frequently
 wish to take quick notes, and having a portable writing implement and space to
 use it is a simple delight.
 
-More that being joyful, having that tool to write helps me overcome inertia
+More than being joyful, having that tool to write helps me overcome inertia
 against writing at all.  I love writing, I have many ways to go about doing it.
 I also have a modern busy life and loved ones - all pulling my attention in
 unpredictable ways.  The ability to write any where, any time, and with minimal
