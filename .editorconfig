@@ -11,4 +11,4 @@ insert_final_newline = true
 # break paragraphs in markdown
 [*.md]
 max_line_length=80
-trim_trailing_whitespace=true
+trim_trailing_whitespace=false
