@@ -87,7 +87,7 @@ I didn't know that cotton paper was a thing.  I still don't know how to make it.
 
 The third thing I noticed about this journal was its clasp.  It was cool and
 functional and seemed like it "would last a lifetime".  I don't know if I
-realized it at the time, but the leather flag is great for holding a pen.
+realized it at the time, but the leather flap is great for holding a pen.
 
 <time datetime="2023-09-30">Sat Sep 30 2023</time> @ BJ's dining
 
@@ -95,7 +95,7 @@ realized it at the time, but the leather flag is great for holding a pen.
 
 The fourth thing I noticed: the cool set-in on the "cover".  (Quotes because
 earlier I had considered buying a "binding", which is, I guess, the same as this
-journal, except it does not come with refillable paper included.
+journal, except it does not come with refillable paper included.)
 
 I didn't actually like that rock as much as I liked this journal's cool blue
 one.  "Lapis" the shopkeeper called this journal's.
