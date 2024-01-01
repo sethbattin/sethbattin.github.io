@@ -67,6 +67,7 @@ Epic: show-worthiness
 
 ### bugs
 - [ ] tags produced in the wrong order (css-misadventures)
+- [ ] tags get nested strangely (science/programming)
 
 ### features
 - [x] index page
@@ -100,5 +101,6 @@ Epic: show-worthiness
 ### rss
 - [ ] add descriptions/snippets/whatever
 - [ ] refine the blockquote excerpt
+- [ ] add a stylesheet to it
 
 [INSTALL.md] ./INSTALL.md
