@@ -16,6 +16,7 @@ BUGS
 ----
 - [ ] something's wrong with nested tags, e.g. science/programming/accessibility
 - [ ] the "business" category link is broken because of that -^
+- [ ] rss entries don't update, e.g. when tags are added
 
 TODO
 ----
@@ -83,6 +84,7 @@ Epic: show-worthiness
 - [ ] refine the illumination
 - [ ] dark mode
 - [ ] color scheme
+- [ ] fill-width style when appropriate (just headline?)
 
 ### deferred
 - [ ] make the author microdata nicer, maybe a custom renderer
