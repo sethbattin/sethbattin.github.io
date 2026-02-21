@@ -36,6 +36,7 @@ TODO
 - [ ] spelling, grammer, and readability checker?
 - [x] add a tagging system
 - [x] create a "showworthy" feature list
+- [ ] add [emojify](https://www.npmjs.com/package/emojify.js/)
 
 
 - DNS/hosting - solved circa March 2021
